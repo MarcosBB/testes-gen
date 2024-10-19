@@ -1,32 +1,40 @@
 package com.example;
-
+import java.util.ArrayList;
 import java.util.List;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@EqualsAndHashCode
 public class Banco {
+    private List<ContaBancaria> contas;
 
-    private Long id;
-
-    private String nome;
-
-    private List<Conta> contas;
-
-    public void addConta(Conta conta){
-        this.contas.add(conta);
+    public Banco() {
+        this.contas = new ArrayList<>();
     }
 
-    public void transferencia(Conta origem, Conta destino, Double valor){
-        if(origem.getSaldo() >= valor){
-            origem.setSaldo(origem.getSaldo() - valor);
-            destino.setSaldo(destino.getSaldo() + valor);
+    public void adicionarConta(ContaBancaria conta) {
+        if (conta != null) {
+            contas.add(conta);
+        }
+    }
+
+    public ContaBancaria buscarContaPorTitular(String titular) {
+        for (ContaBancaria conta : contas) {
+            if (conta != null && conta.exibirDetalhes() != null && conta.exibirDetalhes().contains(titular)) {
+                return conta;
+            }
+        }
+        return null;
+    }
+
+    public void listarContas() {
+        if (contas.isEmpty()) {
+            System.out.println("Nenhuma conta cadastrada.");
+        } else {
+            for (ContaBancaria conta : contas) {
+                if (conta != null) {
+                    System.out.println(conta.exibirDetalhes());
+                } else {
+                    System.out.println("Conta nula.");
+                }
+            }
         }
     }
 }
