@@ -24,235 +24,6 @@ public class RegressionTest2 {
     public void test1001() throws Throwable {
         if (debug)
             System.out.format("%n%s%n", "RegressionTest2.test1001");
-        com.example.Banco banco0 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco0.adicionarConta(contaBancaria3);
-        banco0.listarContas();
-        com.example.ContaBancaria contaBancaria8 = new com.example.ContaBancaria("hi!", (double) (short) 100);
-        banco0.adicionarConta(contaBancaria8);
-        com.example.ContaBancaria contaBancaria11 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 52.0");
-        com.example.Banco banco12 = new com.example.Banco();
-        banco12.listarContas();
-        com.example.Banco banco14 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria17 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco14.adicionarConta(contaBancaria17);
-        banco14.listarContas();
-        com.example.ContaBancaria contaBancaria22 = new com.example.ContaBancaria("hi!", (double) (short) 100);
-        banco14.adicionarConta(contaBancaria22);
-        com.example.ContaBancaria contaBancaria26 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
-        boolean boolean28 = contaBancaria26.sacar((double) (-1L));
-        contaBancaria26.depositar((-1.0d));
-        banco14.adicionarConta(contaBancaria26);
-        banco12.adicionarConta(contaBancaria26);
-        double double33 = contaBancaria26.consultarSaldo();
-        banco0.adicionarConta(contaBancaria26);
-        com.example.Banco banco35 = new com.example.Banco();
-        banco35.listarContas();
-        com.example.Banco banco37 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria40 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco37.adicionarConta(contaBancaria40);
-        banco37.listarContas();
-        com.example.ContaBancaria contaBancaria45 = new com.example.ContaBancaria("hi!", (double) (short) 100);
-        banco37.adicionarConta(contaBancaria45);
-        com.example.ContaBancaria contaBancaria49 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
-        boolean boolean51 = contaBancaria49.sacar((double) (-1L));
-        contaBancaria49.depositar((-1.0d));
-        banco37.adicionarConta(contaBancaria49);
-        banco35.adicionarConta(contaBancaria49);
-        com.example.ContaBancaria contaBancaria58 = new com.example.ContaBancaria("hi!", (double) ' ');
-        banco35.adicionarConta(contaBancaria58);
-        double double60 = contaBancaria58.consultarSaldo();
-        contaBancaria58.depositar((double) (byte) 10);
-        banco0.adicionarConta(contaBancaria58);
-        com.example.ContaBancaria contaBancaria65 = banco0.buscarContaPorTitular("Titular: Titular: Titular: hi!, Saldo: R$ 97.0, Saldo: R$ 100.0, Saldo: R$ 97.0");
-        org.junit.Assert.assertNull(contaBancaria11);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
-        org.junit.Assert.assertTrue("'" + double33 + "' != '" + 10.0d + "'", double33 == 10.0d);
-        org.junit.Assert.assertTrue("'" + boolean51 + "' != '" + false + "'", boolean51 == false);
-        org.junit.Assert.assertTrue("'" + double60 + "' != '" + 32.0d + "'", double60 == 32.0d);
-        org.junit.Assert.assertNull(contaBancaria65);
-    }
-
-    @Test
-    public void test1002() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1002");
-        com.example.Banco banco0 = new com.example.Banco();
-        banco0.listarContas();
-        banco0.listarContas();
-        com.example.ContaBancaria contaBancaria4 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 20.0");
-        com.example.ContaBancaria contaBancaria7 = new com.example.ContaBancaria("hi!", (double) (short) 100);
-        double double8 = contaBancaria7.consultarSaldo();
-        contaBancaria7.depositar((double) (-1.0f));
-        contaBancaria7.depositar((double) (-1L));
-        banco0.adicionarConta(contaBancaria7);
-        com.example.ContaBancaria contaBancaria15 = banco0.buscarContaPorTitular("Titular: , Saldo: R$ 10.0");
-        org.junit.Assert.assertNull(contaBancaria4);
-        org.junit.Assert.assertTrue("'" + double8 + "' != '" + 100.0d + "'", double8 == 100.0d);
-        org.junit.Assert.assertNull(contaBancaria15);
-    }
-
-    @Test
-    public void test1003() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1003");
-        com.example.Banco banco0 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco0.adicionarConta(contaBancaria3);
-        banco0.listarContas();
-        banco0.listarContas();
-        com.example.ContaBancaria contaBancaria9 = new com.example.ContaBancaria("", 10.0d);
-        banco0.adicionarConta(contaBancaria9);
-        com.example.ContaBancaria contaBancaria13 = new com.example.ContaBancaria("hi!", (double) '4');
-        contaBancaria13.depositar((double) (byte) -1);
-        banco0.adicionarConta(contaBancaria13);
-        boolean boolean18 = contaBancaria13.sacar((double) (-1.0f));
-        java.lang.String str19 = contaBancaria13.exibirDetalhes();
-        java.lang.String str20 = contaBancaria13.exibirDetalhes();
-        java.lang.Class<?> wildcardClass21 = contaBancaria13.getClass();
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertEquals("'" + str19 + "' != '" + "Titular: hi!, Saldo: R$ 52.0" + "'", str19, "Titular: hi!, Saldo: R$ 52.0");
-        org.junit.Assert.assertEquals("'" + str20 + "' != '" + "Titular: hi!, Saldo: R$ 52.0" + "'", str20, "Titular: hi!, Saldo: R$ 52.0");
-        org.junit.Assert.assertNotNull(wildcardClass21);
-    }
-
-    @Test
-    public void test1004() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1004");
-        com.example.Banco banco0 = new com.example.Banco();
-        com.example.Banco banco1 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco1.adicionarConta(contaBancaria4);
-        banco0.adicionarConta(contaBancaria4);
-        banco0.listarContas();
-        banco0.listarContas();
-        com.example.Banco banco9 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria12 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco9.adicionarConta(contaBancaria12);
-        banco9.listarContas();
-        banco9.listarContas();
-        com.example.Banco banco16 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria19 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco16.adicionarConta(contaBancaria19);
-        banco16.listarContas();
-        banco16.listarContas();
-        com.example.ContaBancaria contaBancaria25 = new com.example.ContaBancaria("", 10.0d);
-        banco16.adicionarConta(contaBancaria25);
-        com.example.ContaBancaria contaBancaria29 = new com.example.ContaBancaria("hi!", (double) '4');
-        contaBancaria29.depositar((double) (byte) -1);
-        banco16.adicionarConta(contaBancaria29);
-        com.example.ContaBancaria contaBancaria34 = banco16.buscarContaPorTitular("Titular: hi!, Saldo: R$ 52.0");
-        java.lang.String str35 = contaBancaria34.exibirDetalhes();
-        banco9.adicionarConta(contaBancaria34);
-        com.example.Banco banco37 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria40 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco37.adicionarConta(contaBancaria40);
-        banco37.listarContas();
-        com.example.ContaBancaria contaBancaria45 = new com.example.ContaBancaria("hi!", (double) (short) 100);
-        banco37.adicionarConta(contaBancaria45);
-        banco37.listarContas();
-        com.example.ContaBancaria contaBancaria50 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
-        banco37.adicionarConta(contaBancaria50);
-        boolean boolean53 = contaBancaria50.sacar((-1.0d));
-        banco9.adicionarConta(contaBancaria50);
-        banco0.adicionarConta(contaBancaria50);
-        banco0.listarContas();
-        banco0.listarContas();
-        org.junit.Assert.assertNotNull(contaBancaria34);
-        org.junit.Assert.assertEquals("'" + str35 + "' != '" + "Titular: hi!, Saldo: R$ 52.0" + "'", str35, "Titular: hi!, Saldo: R$ 52.0");
-        org.junit.Assert.assertTrue("'" + boolean53 + "' != '" + false + "'", boolean53 == false);
-    }
-
-    @Test
-    public void test1005() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1005");
-        com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 107.0, Saldo: R$ 116.0", 100.0d);
-        java.lang.Class<?> wildcardClass3 = contaBancaria2.getClass();
-        org.junit.Assert.assertNotNull(wildcardClass3);
-    }
-
-    @Test
-    public void test1006() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1006");
-        com.example.Banco banco0 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
-        boolean boolean5 = contaBancaria3.sacar((double) (-1L));
-        banco0.adicionarConta(contaBancaria3);
-        banco0.listarContas();
-        com.example.Banco banco8 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria11 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco8.adicionarConta(contaBancaria11);
-        banco8.listarContas();
-        banco8.listarContas();
-        com.example.ContaBancaria contaBancaria17 = new com.example.ContaBancaria("", 10.0d);
-        banco8.adicionarConta(contaBancaria17);
-        com.example.ContaBancaria contaBancaria21 = new com.example.ContaBancaria("hi!", (double) '4');
-        contaBancaria21.depositar((double) (byte) -1);
-        banco8.adicionarConta(contaBancaria21);
-        boolean boolean26 = contaBancaria21.sacar((double) (-1.0f));
-        java.lang.String str27 = contaBancaria21.exibirDetalhes();
-        banco0.adicionarConta(contaBancaria21);
-        java.lang.String str29 = contaBancaria21.exibirDetalhes();
-        boolean boolean31 = contaBancaria21.sacar(106.0d);
-        boolean boolean33 = contaBancaria21.sacar(29.0d);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertEquals("'" + str27 + "' != '" + "Titular: hi!, Saldo: R$ 52.0" + "'", str27, "Titular: hi!, Saldo: R$ 52.0");
-        org.junit.Assert.assertEquals("'" + str29 + "' != '" + "Titular: hi!, Saldo: R$ 52.0" + "'", str29, "Titular: hi!, Saldo: R$ 52.0");
-        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + false + "'", boolean31 == false);
-        org.junit.Assert.assertTrue("'" + boolean33 + "' != '" + true + "'", boolean33 == true);
-    }
-
-    @Test
-    public void test1007() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1007");
-        com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ -1.0, Saldo: R$ 10.0", (double) (byte) 0);
-        java.lang.Class<?> wildcardClass3 = contaBancaria2.getClass();
-        org.junit.Assert.assertNotNull(wildcardClass3);
-    }
-
-    @Test
-    public void test1008() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1008");
-        com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: , Saldo: R$ 10.0", (double) (-1));
-        double double3 = contaBancaria2.consultarSaldo();
-        org.junit.Assert.assertTrue("'" + double3 + "' != '" + (-1.0d) + "'", double3 == (-1.0d));
-    }
-
-    @Test
-    public void test1009() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1009");
-        com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 84.0, Saldo: R$ -1.0", (double) (short) 10);
-    }
-
-    @Test
-    public void test1010() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1010");
-        com.example.Banco banco0 = new com.example.Banco();
-        com.example.Banco banco1 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco1.adicionarConta(contaBancaria4);
-        banco0.adicionarConta(contaBancaria4);
-        boolean boolean8 = contaBancaria4.sacar((double) (byte) 1);
-        contaBancaria4.depositar(53.0d);
-        double double11 = contaBancaria4.consultarSaldo();
-        double double12 = contaBancaria4.consultarSaldo();
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
-        org.junit.Assert.assertTrue("'" + double11 + "' != '" + 149.0d + "'", double11 == 149.0d);
-        org.junit.Assert.assertTrue("'" + double12 + "' != '" + 149.0d + "'", double12 == 149.0d);
-    }
-
-    @Test
-    public void test1011() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1011");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: , Saldo: R$ 0.0", 0.0d);
         double double3 = contaBancaria2.consultarSaldo();
         boolean boolean5 = contaBancaria2.sacar(20.0d);
@@ -261,9 +32,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1012() throws Throwable {
+    public void test1002() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1012");
+            System.out.format("%n%s%n", "RegressionTest2.test1002");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -297,9 +68,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1013() throws Throwable {
+    public void test1003() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1013");
+            System.out.format("%n%s%n", "RegressionTest2.test1003");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0", (double) (short) 1);
         double double3 = contaBancaria2.consultarSaldo();
         double double4 = contaBancaria2.consultarSaldo();
@@ -308,9 +79,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1014() throws Throwable {
+    public void test1004() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1014");
+            System.out.format("%n%s%n", "RegressionTest2.test1004");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -365,9 +136,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1015() throws Throwable {
+    public void test1005() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1015");
+            System.out.format("%n%s%n", "RegressionTest2.test1005");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) '4');
         contaBancaria2.depositar((double) (byte) -1);
         java.lang.String str5 = contaBancaria2.exibirDetalhes();
@@ -375,17 +146,17 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1016() throws Throwable {
+    public void test1006() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1016");
+            System.out.format("%n%s%n", "RegressionTest2.test1006");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 0.0", 35.0d);
         contaBancaria2.depositar((double) (-1));
     }
 
     @Test
-    public void test1017() throws Throwable {
+    public void test1007() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1017");
+            System.out.format("%n%s%n", "RegressionTest2.test1007");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -429,9 +200,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1018() throws Throwable {
+    public void test1008() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1018");
+            System.out.format("%n%s%n", "RegressionTest2.test1008");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -453,9 +224,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1019() throws Throwable {
+    public void test1009() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1019");
+            System.out.format("%n%s%n", "RegressionTest2.test1009");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("", 10.0d);
         contaBancaria2.depositar((double) (byte) 1);
         boolean boolean6 = contaBancaria2.sacar((double) (-1));
@@ -463,16 +234,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1020() throws Throwable {
+    public void test1010() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1020");
-        com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 182.0", (double) 1.0f);
-    }
-
-    @Test
-    public void test1021() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1021");
+            System.out.format("%n%s%n", "RegressionTest2.test1010");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         banco0.listarContas();
@@ -519,9 +283,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1022() throws Throwable {
+    public void test1011() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1022");
+            System.out.format("%n%s%n", "RegressionTest2.test1011");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -553,16 +317,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1023() throws Throwable {
+    public void test1012() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1023");
+            System.out.format("%n%s%n", "RegressionTest2.test1012");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 47.0", 0.0d);
     }
 
     @Test
-    public void test1024() throws Throwable {
+    public void test1013() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1024");
+            System.out.format("%n%s%n", "RegressionTest2.test1013");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria3 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
@@ -607,49 +371,49 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1025() throws Throwable {
+    public void test1014() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1025");
+            System.out.format("%n%s%n", "RegressionTest2.test1014");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 197.0", 104.0d);
         boolean boolean4 = contaBancaria2.sacar((double) (short) 1);
         org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + true + "'", boolean4 == true);
     }
 
     @Test
-    public void test1026() throws Throwable {
+    public void test1015() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1026");
+            System.out.format("%n%s%n", "RegressionTest2.test1015");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 19.0", 106.0d);
     }
 
     @Test
-    public void test1027() throws Throwable {
+    public void test1016() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1027");
+            System.out.format("%n%s%n", "RegressionTest2.test1016");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 10.0, Saldo: R$ -1.0", (double) 100L);
         contaBancaria2.depositar((double) 10.0f);
     }
 
     @Test
-    public void test1028() throws Throwable {
+    public void test1017() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1028");
+            System.out.format("%n%s%n", "RegressionTest2.test1017");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 20.0, Saldo: R$ 1.0", 187.0d);
     }
 
     @Test
-    public void test1029() throws Throwable {
+    public void test1018() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1029");
+            System.out.format("%n%s%n", "RegressionTest2.test1018");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 182.0", 152.0d);
         boolean boolean4 = contaBancaria2.sacar((double) '4');
         org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + true + "'", boolean4 == true);
     }
 
     @Test
-    public void test1030() throws Throwable {
+    public void test1019() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1030");
+            System.out.format("%n%s%n", "RegressionTest2.test1019");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean4 = contaBancaria2.sacar((double) (-1L));
         contaBancaria2.depositar((-1.0d));
@@ -667,9 +431,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1031() throws Throwable {
+    public void test1020() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1031");
+            System.out.format("%n%s%n", "RegressionTest2.test1020");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.Banco banco2 = new com.example.Banco();
@@ -694,9 +458,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1032() throws Throwable {
+    public void test1021() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1032");
+            System.out.format("%n%s%n", "RegressionTest2.test1021");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -717,16 +481,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1033() throws Throwable {
+    public void test1022() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1033");
+            System.out.format("%n%s%n", "RegressionTest2.test1022");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: , Saldo: R$ 10.0", (double) 10.0f);
     }
 
     @Test
-    public void test1034() throws Throwable {
+    public void test1023() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1034");
+            System.out.format("%n%s%n", "RegressionTest2.test1023");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -742,9 +506,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1035() throws Throwable {
+    public void test1024() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1035");
+            System.out.format("%n%s%n", "RegressionTest2.test1024");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 10.0", (double) (short) -1);
         boolean boolean4 = contaBancaria2.sacar(100.0d);
         boolean boolean6 = contaBancaria2.sacar(193.0d);
@@ -753,9 +517,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1036() throws Throwable {
+    public void test1025() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1036");
+            System.out.format("%n%s%n", "RegressionTest2.test1025");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -777,9 +541,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1037() throws Throwable {
+    public void test1026() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1037");
+            System.out.format("%n%s%n", "RegressionTest2.test1026");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -798,9 +562,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1038() throws Throwable {
+    public void test1027() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1038");
+            System.out.format("%n%s%n", "RegressionTest2.test1027");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -844,18 +608,18 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1039() throws Throwable {
+    public void test1028() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1039");
+            System.out.format("%n%s%n", "RegressionTest2.test1028");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 20.0, Saldo: R$ 1.0", 87.0d);
         double double3 = contaBancaria2.consultarSaldo();
         org.junit.Assert.assertTrue("'" + double3 + "' != '" + 87.0d + "'", double3 == 87.0d);
     }
 
     @Test
-    public void test1040() throws Throwable {
+    public void test1029() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1040");
+            System.out.format("%n%s%n", "RegressionTest2.test1029");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -878,18 +642,18 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1041() throws Throwable {
+    public void test1030() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1041");
+            System.out.format("%n%s%n", "RegressionTest2.test1030");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ -1.0", (double) (byte) 0);
         double double3 = contaBancaria2.consultarSaldo();
         org.junit.Assert.assertTrue("'" + double3 + "' != '" + 0.0d + "'", double3 == 0.0d);
     }
 
     @Test
-    public void test1042() throws Throwable {
+    public void test1031() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1042");
+            System.out.format("%n%s%n", "RegressionTest2.test1031");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("", (double) (byte) 100);
         boolean boolean4 = contaBancaria2.sacar((double) (byte) 1);
         java.lang.Class<?> wildcardClass5 = contaBancaria2.getClass();
@@ -898,9 +662,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1043() throws Throwable {
+    public void test1032() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1043");
+            System.out.format("%n%s%n", "RegressionTest2.test1032");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) '4');
         contaBancaria2.depositar((double) (byte) -1);
         double double5 = contaBancaria2.consultarSaldo();
@@ -924,9 +688,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1044() throws Throwable {
+    public void test1033() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1044");
+            System.out.format("%n%s%n", "RegressionTest2.test1033");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -956,9 +720,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1045() throws Throwable {
+    public void test1034() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1045");
+            System.out.format("%n%s%n", "RegressionTest2.test1034");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -995,9 +759,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1046() throws Throwable {
+    public void test1035() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1046");
+            System.out.format("%n%s%n", "RegressionTest2.test1035");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -1027,17 +791,17 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1047() throws Throwable {
+    public void test1036() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1047");
+            System.out.format("%n%s%n", "RegressionTest2.test1036");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 10.0, Saldo: R$ -1.0", (double) (byte) -1);
         contaBancaria2.depositar(29.0d);
     }
 
     @Test
-    public void test1048() throws Throwable {
+    public void test1037() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1048");
+            System.out.format("%n%s%n", "RegressionTest2.test1037");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 97.0", (double) 100.0f);
         contaBancaria2.depositar((double) 10.0f);
         java.lang.String str5 = contaBancaria2.exibirDetalhes();
@@ -1048,16 +812,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1049() throws Throwable {
+    public void test1038() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1049");
+            System.out.format("%n%s%n", "RegressionTest2.test1038");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 21.0", (double) (short) 10);
     }
 
     @Test
-    public void test1050() throws Throwable {
+    public void test1039() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1050");
+            System.out.format("%n%s%n", "RegressionTest2.test1039");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -1083,9 +847,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1051() throws Throwable {
+    public void test1040() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1051");
+            System.out.format("%n%s%n", "RegressionTest2.test1040");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) '4');
         boolean boolean4 = contaBancaria2.sacar((double) (short) 1);
         double double5 = contaBancaria2.consultarSaldo();
@@ -1094,18 +858,18 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1052() throws Throwable {
+    public void test1041() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1052");
+            System.out.format("%n%s%n", "RegressionTest2.test1041");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ -1.0", (double) (byte) -1);
         boolean boolean4 = contaBancaria2.sacar((double) 10L);
         org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
     }
 
     @Test
-    public void test1053() throws Throwable {
+    public void test1042() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1053");
+            System.out.format("%n%s%n", "RegressionTest2.test1042");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -1121,9 +885,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1054() throws Throwable {
+    public void test1043() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1054");
+            System.out.format("%n%s%n", "RegressionTest2.test1043");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -1160,9 +924,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1055() throws Throwable {
+    public void test1044() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1055");
+            System.out.format("%n%s%n", "RegressionTest2.test1044");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria3 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
@@ -1196,9 +960,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1056() throws Throwable {
+    public void test1045() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1056");
+            System.out.format("%n%s%n", "RegressionTest2.test1045");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -1231,9 +995,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1057() throws Throwable {
+    public void test1046() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1057");
+            System.out.format("%n%s%n", "RegressionTest2.test1046");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -1263,16 +1027,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1058() throws Throwable {
+    public void test1047() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1058");
+            System.out.format("%n%s%n", "RegressionTest2.test1047");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("", 117.0d);
     }
 
     @Test
-    public void test1059() throws Throwable {
+    public void test1048() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1059");
+            System.out.format("%n%s%n", "RegressionTest2.test1048");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -1297,9 +1061,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1060() throws Throwable {
+    public void test1049() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1060");
+            System.out.format("%n%s%n", "RegressionTest2.test1049");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.Banco banco2 = new com.example.Banco();
@@ -1322,34 +1086,34 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1061() throws Throwable {
+    public void test1050() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1061");
+            System.out.format("%n%s%n", "RegressionTest2.test1050");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0", 162.0d);
         boolean boolean4 = contaBancaria2.sacar(20.0d);
         org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + true + "'", boolean4 == true);
     }
 
     @Test
-    public void test1062() throws Throwable {
+    public void test1051() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1062");
+            System.out.format("%n%s%n", "RegressionTest2.test1051");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("", (double) (byte) 0);
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Titular: , Saldo: R$ 0.0" + "'", str3, "Titular: , Saldo: R$ 0.0");
     }
 
     @Test
-    public void test1063() throws Throwable {
+    public void test1052() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1063");
+            System.out.format("%n%s%n", "RegressionTest2.test1052");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 10.0", 152.0d);
     }
 
     @Test
-    public void test1064() throws Throwable {
+    public void test1053() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1064");
+            System.out.format("%n%s%n", "RegressionTest2.test1053");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -1391,9 +1155,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1065() throws Throwable {
+    public void test1054() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1065");
+            System.out.format("%n%s%n", "RegressionTest2.test1054");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -1420,23 +1184,23 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1066() throws Throwable {
+    public void test1055() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1066");
+            System.out.format("%n%s%n", "RegressionTest2.test1055");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 100.0", 29.0d);
     }
 
     @Test
-    public void test1067() throws Throwable {
+    public void test1056() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1067");
+            System.out.format("%n%s%n", "RegressionTest2.test1056");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 47.0", (double) 10.0f);
     }
 
     @Test
-    public void test1068() throws Throwable {
+    public void test1057() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1068");
+            System.out.format("%n%s%n", "RegressionTest2.test1057");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -1462,9 +1226,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1069() throws Throwable {
+    public void test1058() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1069");
+            System.out.format("%n%s%n", "RegressionTest2.test1058");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -1520,9 +1284,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1070() throws Throwable {
+    public void test1059() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1070");
+            System.out.format("%n%s%n", "RegressionTest2.test1059");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -1556,16 +1320,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1071() throws Throwable {
+    public void test1060() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1071");
+            System.out.format("%n%s%n", "RegressionTest2.test1060");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: Titular: , Saldo: R$ 0.0, Saldo: R$ 0.0, Saldo: R$ 10.0", 262.0d);
     }
 
     @Test
-    public void test1072() throws Throwable {
+    public void test1061() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1072");
+            System.out.format("%n%s%n", "RegressionTest2.test1061");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 52.0", (double) 0.0f);
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         boolean boolean5 = contaBancaria2.sacar((double) 100L);
@@ -1578,9 +1342,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1073() throws Throwable {
+    public void test1062() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1073");
+            System.out.format("%n%s%n", "RegressionTest2.test1062");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -1604,9 +1368,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1074() throws Throwable {
+    public void test1063() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1074");
+            System.out.format("%n%s%n", "RegressionTest2.test1063");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -1629,9 +1393,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1075() throws Throwable {
+    public void test1064() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1075");
+            System.out.format("%n%s%n", "RegressionTest2.test1064");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         banco0.listarContas();
@@ -1680,9 +1444,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1076() throws Throwable {
+    public void test1065() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1076");
+            System.out.format("%n%s%n", "RegressionTest2.test1065");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -1738,16 +1502,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1077() throws Throwable {
+    public void test1066() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1077");
+            System.out.format("%n%s%n", "RegressionTest2.test1066");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 62.0", 0.0d);
     }
 
     @Test
-    public void test1078() throws Throwable {
+    public void test1067() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1078");
+            System.out.format("%n%s%n", "RegressionTest2.test1067");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("", (-1.0d));
         contaBancaria3.depositar(1.0d);
@@ -1759,9 +1523,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1079() throws Throwable {
+    public void test1068() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1079");
+            System.out.format("%n%s%n", "RegressionTest2.test1068");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria3 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
@@ -1777,9 +1541,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1080() throws Throwable {
+    public void test1069() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1080");
+            System.out.format("%n%s%n", "RegressionTest2.test1069");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -1814,9 +1578,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1081() throws Throwable {
+    public void test1070() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1081");
+            System.out.format("%n%s%n", "RegressionTest2.test1070");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -1860,9 +1624,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1082() throws Throwable {
+    public void test1071() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1082");
+            System.out.format("%n%s%n", "RegressionTest2.test1071");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -1905,9 +1669,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1083() throws Throwable {
+    public void test1072() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1083");
+            System.out.format("%n%s%n", "RegressionTest2.test1072");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -1925,9 +1689,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1084() throws Throwable {
+    public void test1073() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1084");
+            System.out.format("%n%s%n", "RegressionTest2.test1073");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) '4');
         double double3 = contaBancaria2.consultarSaldo();
         java.lang.String str4 = contaBancaria2.exibirDetalhes();
@@ -1941,18 +1705,18 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1085() throws Throwable {
+    public void test1074() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1085");
+            System.out.format("%n%s%n", "RegressionTest2.test1074");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ -1.0", (double) (byte) 10);
         java.lang.Class<?> wildcardClass3 = contaBancaria2.getClass();
         org.junit.Assert.assertNotNull(wildcardClass3);
     }
 
     @Test
-    public void test1086() throws Throwable {
+    public void test1075() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1086");
+            System.out.format("%n%s%n", "RegressionTest2.test1075");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -1999,9 +1763,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1087() throws Throwable {
+    public void test1076() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1087");
+            System.out.format("%n%s%n", "RegressionTest2.test1076");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -2015,9 +1779,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1088() throws Throwable {
+    public void test1077() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1088");
+            System.out.format("%n%s%n", "RegressionTest2.test1077");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -2037,17 +1801,17 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1089() throws Throwable {
+    public void test1078() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1089");
+            System.out.format("%n%s%n", "RegressionTest2.test1078");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ -1.0, Saldo: R$ 100.0", (double) ' ');
         contaBancaria2.depositar((double) 1L);
     }
 
     @Test
-    public void test1090() throws Throwable {
+    public void test1079() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1090");
+            System.out.format("%n%s%n", "RegressionTest2.test1079");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -2077,9 +1841,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1091() throws Throwable {
+    public void test1080() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1091");
+            System.out.format("%n%s%n", "RegressionTest2.test1080");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -2100,9 +1864,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1092() throws Throwable {
+    public void test1081() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1092");
+            System.out.format("%n%s%n", "RegressionTest2.test1081");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) '4');
         contaBancaria2.depositar((double) (byte) -1);
         double double5 = contaBancaria2.consultarSaldo();
@@ -2113,9 +1877,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1093() throws Throwable {
+    public void test1082() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1093");
+            System.out.format("%n%s%n", "RegressionTest2.test1082");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) (short) 100);
         double double3 = contaBancaria2.consultarSaldo();
         java.lang.Class<?> wildcardClass4 = contaBancaria2.getClass();
@@ -2124,9 +1888,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1094() throws Throwable {
+    public void test1083() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1094");
+            System.out.format("%n%s%n", "RegressionTest2.test1083");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria3 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
@@ -2141,9 +1905,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1095() throws Throwable {
+    public void test1084() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1095");
+            System.out.format("%n%s%n", "RegressionTest2.test1084");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -2168,9 +1932,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1096() throws Throwable {
+    public void test1085() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1096");
+            System.out.format("%n%s%n", "RegressionTest2.test1085");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -2184,9 +1948,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1097() throws Throwable {
+    public void test1086() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1097");
+            System.out.format("%n%s%n", "RegressionTest2.test1086");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -2211,9 +1975,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1098() throws Throwable {
+    public void test1087() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1098");
+            System.out.format("%n%s%n", "RegressionTest2.test1087");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -2234,9 +1998,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1099() throws Throwable {
+    public void test1088() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1099");
+            System.out.format("%n%s%n", "RegressionTest2.test1088");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean4 = contaBancaria2.sacar((double) (short) -1);
         java.lang.String str5 = contaBancaria2.exibirDetalhes();
@@ -2245,9 +2009,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1100() throws Throwable {
+    public void test1089() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1100");
+            System.out.format("%n%s%n", "RegressionTest2.test1089");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -2298,9 +2062,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1101() throws Throwable {
+    public void test1090() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1101");
+            System.out.format("%n%s%n", "RegressionTest2.test1090");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -2318,18 +2082,18 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1102() throws Throwable {
+    public void test1091() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1102");
+            System.out.format("%n%s%n", "RegressionTest2.test1091");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", 0.0d);
         double double3 = contaBancaria2.consultarSaldo();
         org.junit.Assert.assertTrue("'" + double3 + "' != '" + 0.0d + "'", double3 == 0.0d);
     }
 
     @Test
-    public void test1103() throws Throwable {
+    public void test1092() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1103");
+            System.out.format("%n%s%n", "RegressionTest2.test1092");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -2382,16 +2146,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1104() throws Throwable {
+    public void test1093() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1104");
+            System.out.format("%n%s%n", "RegressionTest2.test1093");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: , Saldo: R$ 10.0", 147.0d);
     }
 
     @Test
-    public void test1105() throws Throwable {
+    public void test1094() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1105");
+            System.out.format("%n%s%n", "RegressionTest2.test1094");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -2414,9 +2178,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1106() throws Throwable {
+    public void test1095() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1106");
+            System.out.format("%n%s%n", "RegressionTest2.test1095");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 51.0", (double) (short) 10);
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         contaBancaria2.depositar((double) 1.0f);
@@ -2424,9 +2188,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1107() throws Throwable {
+    public void test1096() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1107");
+            System.out.format("%n%s%n", "RegressionTest2.test1096");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -2452,18 +2216,18 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1108() throws Throwable {
+    public void test1097() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1108");
+            System.out.format("%n%s%n", "RegressionTest2.test1097");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ -1.0, Saldo: R$ 87.0", (double) 10L);
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Titular: Titular: Titular: hi!, Saldo: R$ -1.0, Saldo: R$ 87.0, Saldo: R$ 10.0" + "'", str3, "Titular: Titular: Titular: hi!, Saldo: R$ -1.0, Saldo: R$ 87.0, Saldo: R$ 10.0");
     }
 
     @Test
-    public void test1109() throws Throwable {
+    public void test1098() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1109");
+            System.out.format("%n%s%n", "RegressionTest2.test1098");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria3 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
@@ -2516,9 +2280,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1110() throws Throwable {
+    public void test1099() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1110");
+            System.out.format("%n%s%n", "RegressionTest2.test1099");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         banco0.listarContas();
@@ -2537,9 +2301,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1111() throws Throwable {
+    public void test1100() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1111");
+            System.out.format("%n%s%n", "RegressionTest2.test1100");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         contaBancaria2.depositar((double) 10.0f);
@@ -2550,16 +2314,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1112() throws Throwable {
+    public void test1101() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1112");
+            System.out.format("%n%s%n", "RegressionTest2.test1101");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: , Saldo: R$ 0.0", 162.0d);
     }
 
     @Test
-    public void test1113() throws Throwable {
+    public void test1102() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1113");
+            System.out.format("%n%s%n", "RegressionTest2.test1102");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -2581,16 +2345,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1114() throws Throwable {
+    public void test1103() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1114");
+            System.out.format("%n%s%n", "RegressionTest2.test1103");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 52.0", 0.0d);
     }
 
     @Test
-    public void test1115() throws Throwable {
+    public void test1104() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1115");
+            System.out.format("%n%s%n", "RegressionTest2.test1104");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) '4');
         contaBancaria2.depositar((double) (byte) -1);
         boolean boolean6 = contaBancaria2.sacar((double) (byte) -1);
@@ -2600,9 +2364,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1116() throws Throwable {
+    public void test1105() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1116");
+            System.out.format("%n%s%n", "RegressionTest2.test1105");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -2667,9 +2431,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1117() throws Throwable {
+    public void test1106() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1117");
+            System.out.format("%n%s%n", "RegressionTest2.test1106");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.Banco banco2 = new com.example.Banco();
@@ -2702,9 +2466,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1118() throws Throwable {
+    public void test1107() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1118");
+            System.out.format("%n%s%n", "RegressionTest2.test1107");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.Banco banco2 = new com.example.Banco();
@@ -2741,9 +2505,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1119() throws Throwable {
+    public void test1108() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1119");
+            System.out.format("%n%s%n", "RegressionTest2.test1108");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -2765,16 +2529,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1120() throws Throwable {
+    public void test1109() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1120");
+            System.out.format("%n%s%n", "RegressionTest2.test1109");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 97.0, Saldo: R$ 32.0", (double) 1L);
     }
 
     @Test
-    public void test1121() throws Throwable {
+    public void test1110() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1121");
+            System.out.format("%n%s%n", "RegressionTest2.test1110");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -2796,9 +2560,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1122() throws Throwable {
+    public void test1111() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1122");
+            System.out.format("%n%s%n", "RegressionTest2.test1111");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -2850,9 +2614,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1123() throws Throwable {
+    public void test1112() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1123");
+            System.out.format("%n%s%n", "RegressionTest2.test1112");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -2919,16 +2683,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1124() throws Throwable {
+    public void test1113() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1124");
+            System.out.format("%n%s%n", "RegressionTest2.test1113");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 52.0", (double) (short) 10);
     }
 
     @Test
-    public void test1125() throws Throwable {
+    public void test1114() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1125");
+            System.out.format("%n%s%n", "RegressionTest2.test1114");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -2941,9 +2705,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1126() throws Throwable {
+    public void test1115() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1126");
+            System.out.format("%n%s%n", "RegressionTest2.test1115");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("", (-1.0d));
         contaBancaria2.depositar(1.0d);
         contaBancaria2.depositar(0.0d);
@@ -2952,9 +2716,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1127() throws Throwable {
+    public void test1116() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1127");
+            System.out.format("%n%s%n", "RegressionTest2.test1116");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -2983,9 +2747,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1128() throws Throwable {
+    public void test1117() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1128");
+            System.out.format("%n%s%n", "RegressionTest2.test1117");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -3005,25 +2769,25 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1129() throws Throwable {
+    public void test1118() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1129");
+            System.out.format("%n%s%n", "RegressionTest2.test1118");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: Titular: hi!, Saldo: R$ 51.0, Saldo: R$ 100.0, Saldo: R$ 100.0", 107.0d);
     }
 
     @Test
-    public void test1130() throws Throwable {
+    public void test1119() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1130");
+            System.out.format("%n%s%n", "RegressionTest2.test1119");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: , Saldo: R$ 0.0, Saldo: R$ 0.0", 9.0d);
         boolean boolean4 = contaBancaria2.sacar((double) 100L);
         org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
     }
 
     @Test
-    public void test1131() throws Throwable {
+    public void test1120() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1131");
+            System.out.format("%n%s%n", "RegressionTest2.test1120");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -3052,9 +2816,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1132() throws Throwable {
+    public void test1121() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1132");
+            System.out.format("%n%s%n", "RegressionTest2.test1121");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("", 10.0d);
         contaBancaria2.depositar((double) (byte) 1);
         java.lang.Class<?> wildcardClass5 = contaBancaria2.getClass();
@@ -3062,9 +2826,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1133() throws Throwable {
+    public void test1122() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1133");
+            System.out.format("%n%s%n", "RegressionTest2.test1122");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -3093,9 +2857,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1134() throws Throwable {
+    public void test1123() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1134");
+            System.out.format("%n%s%n", "RegressionTest2.test1123");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("", (-1.0d));
         contaBancaria3.depositar(1.0d);
@@ -3107,9 +2871,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1135() throws Throwable {
+    public void test1124() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1135");
+            System.out.format("%n%s%n", "RegressionTest2.test1124");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -3127,9 +2891,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1136() throws Throwable {
+    public void test1125() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1136");
+            System.out.format("%n%s%n", "RegressionTest2.test1125");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) '4');
         double double3 = contaBancaria2.consultarSaldo();
         java.lang.String str4 = contaBancaria2.exibirDetalhes();
@@ -3144,9 +2908,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1137() throws Throwable {
+    public void test1126() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1137");
+            System.out.format("%n%s%n", "RegressionTest2.test1126");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 97.0", (double) 100.0f);
         contaBancaria2.depositar((double) 10.0f);
         java.lang.String str5 = contaBancaria2.exibirDetalhes();
@@ -3158,9 +2922,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1138() throws Throwable {
+    public void test1127() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1138");
+            System.out.format("%n%s%n", "RegressionTest2.test1127");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria3 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
@@ -3190,18 +2954,18 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1139() throws Throwable {
+    public void test1128() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1139");
+            System.out.format("%n%s%n", "RegressionTest2.test1128");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0", (double) 0L);
         double double3 = contaBancaria2.consultarSaldo();
         org.junit.Assert.assertTrue("'" + double3 + "' != '" + 0.0d + "'", double3 == 0.0d);
     }
 
     @Test
-    public void test1140() throws Throwable {
+    public void test1129() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1140");
+            System.out.format("%n%s%n", "RegressionTest2.test1129");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -3233,9 +2997,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1141() throws Throwable {
+    public void test1130() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1141");
+            System.out.format("%n%s%n", "RegressionTest2.test1130");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -3291,9 +3055,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1142() throws Throwable {
+    public void test1131() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1142");
+            System.out.format("%n%s%n", "RegressionTest2.test1131");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -3312,9 +3076,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1143() throws Throwable {
+    public void test1132() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1143");
+            System.out.format("%n%s%n", "RegressionTest2.test1132");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -3374,9 +3138,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1144() throws Throwable {
+    public void test1133() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1144");
+            System.out.format("%n%s%n", "RegressionTest2.test1133");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) 100L);
         double double3 = contaBancaria2.consultarSaldo();
         double double4 = contaBancaria2.consultarSaldo();
@@ -3389,9 +3153,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1145() throws Throwable {
+    public void test1134() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1145");
+            System.out.format("%n%s%n", "RegressionTest2.test1134");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -3459,9 +3223,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1146() throws Throwable {
+    public void test1135() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1146");
+            System.out.format("%n%s%n", "RegressionTest2.test1135");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -3517,9 +3281,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1147() throws Throwable {
+    public void test1136() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1147");
+            System.out.format("%n%s%n", "RegressionTest2.test1136");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -3552,9 +3316,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1148() throws Throwable {
+    public void test1137() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1148");
+            System.out.format("%n%s%n", "RegressionTest2.test1137");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) (-1.0f));
         boolean boolean4 = contaBancaria2.sacar((double) 100);
         boolean boolean6 = contaBancaria2.sacar((double) 'a');
@@ -3565,9 +3329,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1149() throws Throwable {
+    public void test1138() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1149");
+            System.out.format("%n%s%n", "RegressionTest2.test1138");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -3580,9 +3344,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1150() throws Throwable {
+    public void test1139() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1150");
+            System.out.format("%n%s%n", "RegressionTest2.test1139");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -3612,9 +3376,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1151() throws Throwable {
+    public void test1140() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1151");
+            System.out.format("%n%s%n", "RegressionTest2.test1140");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria3 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
@@ -3680,16 +3444,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1152() throws Throwable {
+    public void test1141() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1152");
+            System.out.format("%n%s%n", "RegressionTest2.test1141");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 97.0, Saldo: R$ 110.0", (double) (short) -1);
     }
 
     @Test
-    public void test1153() throws Throwable {
+    public void test1142() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1153");
+            System.out.format("%n%s%n", "RegressionTest2.test1142");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -3703,9 +3467,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1154() throws Throwable {
+    public void test1143() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1154");
+            System.out.format("%n%s%n", "RegressionTest2.test1143");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -3751,9 +3515,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1155() throws Throwable {
+    public void test1144() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1155");
+            System.out.format("%n%s%n", "RegressionTest2.test1144");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria3 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
@@ -3794,9 +3558,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1156() throws Throwable {
+    public void test1145() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1156");
+            System.out.format("%n%s%n", "RegressionTest2.test1145");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -3812,9 +3576,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1157() throws Throwable {
+    public void test1146() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1157");
+            System.out.format("%n%s%n", "RegressionTest2.test1146");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -3870,9 +3634,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1158() throws Throwable {
+    public void test1147() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1158");
+            System.out.format("%n%s%n", "RegressionTest2.test1147");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -3920,9 +3684,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1159() throws Throwable {
+    public void test1148() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1159");
+            System.out.format("%n%s%n", "RegressionTest2.test1148");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0", (double) 0L);
         contaBancaria2.depositar((double) (short) 10);
         boolean boolean6 = contaBancaria2.sacar(96.0d);
@@ -3935,18 +3699,18 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1160() throws Throwable {
+    public void test1149() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1160");
+            System.out.format("%n%s%n", "RegressionTest2.test1149");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 1.0", 0.0d);
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Titular: Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 1.0, Saldo: R$ 0.0" + "'", str3, "Titular: Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 1.0, Saldo: R$ 0.0");
     }
 
     @Test
-    public void test1161() throws Throwable {
+    public void test1150() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1161");
+            System.out.format("%n%s%n", "RegressionTest2.test1150");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -3987,9 +3751,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1162() throws Throwable {
+    public void test1151() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1162");
+            System.out.format("%n%s%n", "RegressionTest2.test1151");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -4023,9 +3787,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1163() throws Throwable {
+    public void test1152() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1163");
+            System.out.format("%n%s%n", "RegressionTest2.test1152");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -4049,9 +3813,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1164() throws Throwable {
+    public void test1153() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1164");
+            System.out.format("%n%s%n", "RegressionTest2.test1153");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -4101,9 +3865,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1165() throws Throwable {
+    public void test1154() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1165");
+            System.out.format("%n%s%n", "RegressionTest2.test1154");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -4125,9 +3889,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1166() throws Throwable {
+    public void test1155() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1166");
+            System.out.format("%n%s%n", "RegressionTest2.test1155");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -4157,9 +3921,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1167() throws Throwable {
+    public void test1156() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1167");
+            System.out.format("%n%s%n", "RegressionTest2.test1156");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", 0.0d);
         boolean boolean4 = contaBancaria2.sacar((double) (byte) 100);
         java.lang.String str5 = contaBancaria2.exibirDetalhes();
@@ -4174,9 +3938,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1168() throws Throwable {
+    public void test1157() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1168");
+            System.out.format("%n%s%n", "RegressionTest2.test1157");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -4210,9 +3974,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1169() throws Throwable {
+    public void test1158() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1169");
+            System.out.format("%n%s%n", "RegressionTest2.test1158");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -4237,9 +4001,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1170() throws Throwable {
+    public void test1159() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1170");
+            System.out.format("%n%s%n", "RegressionTest2.test1159");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -4252,9 +4016,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1171() throws Throwable {
+    public void test1160() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1171");
+            System.out.format("%n%s%n", "RegressionTest2.test1160");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) '4');
         contaBancaria2.depositar((double) (byte) -1);
         double double5 = contaBancaria2.consultarSaldo();
@@ -4266,9 +4030,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1172() throws Throwable {
+    public void test1161() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1172");
+            System.out.format("%n%s%n", "RegressionTest2.test1161");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         banco0.listarContas();
@@ -4307,9 +4071,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1173() throws Throwable {
+    public void test1162() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1173");
+            System.out.format("%n%s%n", "RegressionTest2.test1162");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -4331,9 +4095,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1174() throws Throwable {
+    public void test1163() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1174");
+            System.out.format("%n%s%n", "RegressionTest2.test1163");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.Banco banco2 = new com.example.Banco();
@@ -4362,9 +4126,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1175() throws Throwable {
+    public void test1164() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1175");
+            System.out.format("%n%s%n", "RegressionTest2.test1164");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -4395,17 +4159,17 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1176() throws Throwable {
+    public void test1165() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1176");
+            System.out.format("%n%s%n", "RegressionTest2.test1165");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("", 96.0d);
         contaBancaria2.depositar(149.0d);
     }
 
     @Test
-    public void test1177() throws Throwable {
+    public void test1166() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1177");
+            System.out.format("%n%s%n", "RegressionTest2.test1166");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.Banco banco2 = new com.example.Banco();
@@ -4432,9 +4196,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1178() throws Throwable {
+    public void test1167() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1178");
+            System.out.format("%n%s%n", "RegressionTest2.test1167");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0", (double) 0L);
         contaBancaria2.depositar((double) (short) 10);
         boolean boolean6 = contaBancaria2.sacar(96.0d);
@@ -4445,9 +4209,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1179() throws Throwable {
+    public void test1168() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1179");
+            System.out.format("%n%s%n", "RegressionTest2.test1168");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -4463,17 +4227,17 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1180() throws Throwable {
+    public void test1169() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1180");
+            System.out.format("%n%s%n", "RegressionTest2.test1169");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", 1.0d);
         contaBancaria2.depositar(87.0d);
     }
 
     @Test
-    public void test1181() throws Throwable {
+    public void test1170() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1181");
+            System.out.format("%n%s%n", "RegressionTest2.test1170");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -4504,9 +4268,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1182() throws Throwable {
+    public void test1171() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1182");
+            System.out.format("%n%s%n", "RegressionTest2.test1171");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -4520,9 +4284,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1183() throws Throwable {
+    public void test1172() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1183");
+            System.out.format("%n%s%n", "RegressionTest2.test1172");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -4544,9 +4308,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1184() throws Throwable {
+    public void test1173() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1184");
+            System.out.format("%n%s%n", "RegressionTest2.test1173");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -4573,9 +4337,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1185() throws Throwable {
+    public void test1174() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1185");
+            System.out.format("%n%s%n", "RegressionTest2.test1174");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -4606,9 +4370,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1186() throws Throwable {
+    public void test1175() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1186");
+            System.out.format("%n%s%n", "RegressionTest2.test1175");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -4625,9 +4389,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1187() throws Throwable {
+    public void test1176() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1187");
+            System.out.format("%n%s%n", "RegressionTest2.test1176");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -4670,9 +4434,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1188() throws Throwable {
+    public void test1177() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1188");
+            System.out.format("%n%s%n", "RegressionTest2.test1177");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) '4');
         contaBancaria2.depositar((double) (byte) -1);
         double double5 = contaBancaria2.consultarSaldo();
@@ -4695,9 +4459,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1189() throws Throwable {
+    public void test1178() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1189");
+            System.out.format("%n%s%n", "RegressionTest2.test1178");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -4731,9 +4495,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1190() throws Throwable {
+    public void test1179() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1190");
+            System.out.format("%n%s%n", "RegressionTest2.test1179");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -4760,9 +4524,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1191() throws Throwable {
+    public void test1180() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1191");
+            System.out.format("%n%s%n", "RegressionTest2.test1180");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 51.0", (double) (byte) -1);
         contaBancaria2.depositar(88.0d);
         double double5 = contaBancaria2.consultarSaldo();
@@ -4770,9 +4534,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1192() throws Throwable {
+    public void test1181() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1192");
+            System.out.format("%n%s%n", "RegressionTest2.test1181");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria3 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
@@ -4798,9 +4562,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1193() throws Throwable {
+    public void test1182() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1193");
+            System.out.format("%n%s%n", "RegressionTest2.test1182");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -4851,16 +4615,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1194() throws Throwable {
+    public void test1183() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1194");
+            System.out.format("%n%s%n", "RegressionTest2.test1183");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 84.0", 8.0d);
     }
 
     @Test
-    public void test1195() throws Throwable {
+    public void test1184() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1195");
+            System.out.format("%n%s%n", "RegressionTest2.test1184");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -4879,9 +4643,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1196() throws Throwable {
+    public void test1185() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1196");
+            System.out.format("%n%s%n", "RegressionTest2.test1185");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -4927,9 +4691,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1197() throws Throwable {
+    public void test1186() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1197");
+            System.out.format("%n%s%n", "RegressionTest2.test1186");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -4966,16 +4730,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1198() throws Throwable {
+    public void test1187() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1198");
+            System.out.format("%n%s%n", "RegressionTest2.test1187");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: , Saldo: R$ 1.0", (double) 'a');
     }
 
     @Test
-    public void test1199() throws Throwable {
+    public void test1188() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1199");
+            System.out.format("%n%s%n", "RegressionTest2.test1188");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -5006,9 +4770,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1200() throws Throwable {
+    public void test1189() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1200");
+            System.out.format("%n%s%n", "RegressionTest2.test1189");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -5030,9 +4794,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1201() throws Throwable {
+    public void test1190() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1201");
+            System.out.format("%n%s%n", "RegressionTest2.test1190");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -5048,9 +4812,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1202() throws Throwable {
+    public void test1191() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1202");
+            System.out.format("%n%s%n", "RegressionTest2.test1191");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -5072,76 +4836,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1203() throws Throwable {
+    public void test1192() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1203");
-        com.example.Banco banco0 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco0.adicionarConta(contaBancaria3);
-        banco0.listarContas();
-        banco0.listarContas();
-        com.example.Banco banco7 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria10 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco7.adicionarConta(contaBancaria10);
-        banco7.listarContas();
-        banco7.listarContas();
-        com.example.ContaBancaria contaBancaria16 = new com.example.ContaBancaria("", 10.0d);
-        banco7.adicionarConta(contaBancaria16);
-        com.example.ContaBancaria contaBancaria20 = new com.example.ContaBancaria("hi!", (double) '4');
-        contaBancaria20.depositar((double) (byte) -1);
-        banco7.adicionarConta(contaBancaria20);
-        boolean boolean25 = contaBancaria20.sacar((double) (-1.0f));
-        java.lang.String str26 = contaBancaria20.exibirDetalhes();
-        contaBancaria20.depositar((double) (-1.0f));
-        banco0.adicionarConta(contaBancaria20);
-        com.example.Banco banco30 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria33 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco30.adicionarConta(contaBancaria33);
-        banco30.listarContas();
-        com.example.ContaBancaria contaBancaria38 = new com.example.ContaBancaria("hi!", (double) (short) 100);
-        banco30.adicionarConta(contaBancaria38);
-        banco30.listarContas();
-        com.example.ContaBancaria contaBancaria43 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
-        banco30.adicionarConta(contaBancaria43);
-        com.example.ContaBancaria contaBancaria46 = banco30.buscarContaPorTitular("Titular: Titular: hi!, Saldo: R$ 97.0, Saldo: R$ 100.0");
-        banco30.listarContas();
-        com.example.Banco banco48 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria51 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco48.adicionarConta(contaBancaria51);
-        banco48.listarContas();
-        banco48.listarContas();
-        com.example.ContaBancaria contaBancaria57 = new com.example.ContaBancaria("", 10.0d);
-        banco48.adicionarConta(contaBancaria57);
-        com.example.ContaBancaria contaBancaria61 = new com.example.ContaBancaria("hi!", (double) '4');
-        contaBancaria61.depositar((double) (byte) -1);
-        banco48.adicionarConta(contaBancaria61);
-        com.example.ContaBancaria contaBancaria66 = banco48.buscarContaPorTitular("Titular: hi!, Saldo: R$ 52.0");
-        com.example.ContaBancaria contaBancaria68 = banco48.buscarContaPorTitular("Titular: hi!, Saldo: R$ 51.0");
-        com.example.ContaBancaria contaBancaria71 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 52.0", (double) 0.0f);
-        java.lang.String str72 = contaBancaria71.exibirDetalhes();
-        banco48.adicionarConta(contaBancaria71);
-        com.example.ContaBancaria contaBancaria75 = banco48.buscarContaPorTitular("Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0");
-        boolean boolean77 = contaBancaria75.sacar((double) (short) 100);
-        java.lang.String str78 = contaBancaria75.exibirDetalhes();
-        double double79 = contaBancaria75.consultarSaldo();
-        banco30.adicionarConta(contaBancaria75);
-        banco0.adicionarConta(contaBancaria75);
-        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + false + "'", boolean25 == false);
-        org.junit.Assert.assertEquals("'" + str26 + "' != '" + "Titular: hi!, Saldo: R$ 52.0" + "'", str26, "Titular: hi!, Saldo: R$ 52.0");
-        org.junit.Assert.assertNull(contaBancaria46);
-        org.junit.Assert.assertNotNull(contaBancaria66);
-        org.junit.Assert.assertNull(contaBancaria68);
-        org.junit.Assert.assertEquals("'" + str72 + "' != '" + "Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0" + "'", str72, "Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0");
-        org.junit.Assert.assertNotNull(contaBancaria75);
-        org.junit.Assert.assertTrue("'" + boolean77 + "' != '" + false + "'", boolean77 == false);
-        org.junit.Assert.assertEquals("'" + str78 + "' != '" + "Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0" + "'", str78, "Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0");
-        org.junit.Assert.assertTrue("'" + double79 + "' != '" + 0.0d + "'", double79 == 0.0d);
-    }
-
-    @Test
-    public void test1204() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1204");
+            System.out.format("%n%s%n", "RegressionTest2.test1192");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -5181,18 +4878,18 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1205() throws Throwable {
+    public void test1193() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1205");
+            System.out.format("%n%s%n", "RegressionTest2.test1193");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 0.0", 152.0d);
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Titular: Titular: hi!, Saldo: R$ 0.0, Saldo: R$ 152.0" + "'", str3, "Titular: Titular: hi!, Saldo: R$ 0.0, Saldo: R$ 152.0");
     }
 
     @Test
-    public void test1206() throws Throwable {
+    public void test1194() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1206");
+            System.out.format("%n%s%n", "RegressionTest2.test1194");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -5224,16 +4921,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1207() throws Throwable {
+    public void test1195() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1207");
+            System.out.format("%n%s%n", "RegressionTest2.test1195");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 194.0", (double) (-1.0f));
     }
 
     @Test
-    public void test1208() throws Throwable {
+    public void test1196() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1208");
+            System.out.format("%n%s%n", "RegressionTest2.test1196");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) '4');
         contaBancaria2.depositar((double) (byte) -1);
         double double5 = contaBancaria2.consultarSaldo();
@@ -5248,9 +4945,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1209() throws Throwable {
+    public void test1197() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1209");
+            System.out.format("%n%s%n", "RegressionTest2.test1197");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -5268,9 +4965,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1210() throws Throwable {
+    public void test1198() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1210");
+            System.out.format("%n%s%n", "RegressionTest2.test1198");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 52.0", (double) 0.0f);
@@ -5282,9 +4979,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1211() throws Throwable {
+    public void test1199() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1211");
+            System.out.format("%n%s%n", "RegressionTest2.test1199");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -5308,9 +5005,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1212() throws Throwable {
+    public void test1200() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1212");
+            System.out.format("%n%s%n", "RegressionTest2.test1200");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -5321,9 +5018,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1213() throws Throwable {
+    public void test1201() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1213");
+            System.out.format("%n%s%n", "RegressionTest2.test1201");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.Banco banco2 = new com.example.Banco();
@@ -5345,9 +5042,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1214() throws Throwable {
+    public void test1202() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1214");
+            System.out.format("%n%s%n", "RegressionTest2.test1202");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -5406,9 +5103,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1215() throws Throwable {
+    public void test1203() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1215");
+            System.out.format("%n%s%n", "RegressionTest2.test1203");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -5443,9 +5140,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1216() throws Throwable {
+    public void test1204() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1216");
+            System.out.format("%n%s%n", "RegressionTest2.test1204");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -5465,9 +5162,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1217() throws Throwable {
+    public void test1205() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1217");
+            System.out.format("%n%s%n", "RegressionTest2.test1205");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) '4');
         contaBancaria2.depositar((double) (byte) -1);
         double double5 = contaBancaria2.consultarSaldo();
@@ -5485,9 +5182,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1218() throws Throwable {
+    public void test1206() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1218");
+            System.out.format("%n%s%n", "RegressionTest2.test1206");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -5517,23 +5214,23 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1219() throws Throwable {
+    public void test1207() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1219");
+            System.out.format("%n%s%n", "RegressionTest2.test1207");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0, Saldo: R$ 162.0, Saldo: R$ 32.0", 184.0d);
     }
 
     @Test
-    public void test1220() throws Throwable {
+    public void test1208() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1220");
+            System.out.format("%n%s%n", "RegressionTest2.test1208");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 20.0, Saldo: R$ 11.0", 88.0d);
     }
 
     @Test
-    public void test1221() throws Throwable {
+    public void test1209() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1221");
+            System.out.format("%n%s%n", "RegressionTest2.test1209");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -5558,9 +5255,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1222() throws Throwable {
+    public void test1210() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1222");
+            System.out.format("%n%s%n", "RegressionTest2.test1210");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -5587,9 +5284,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1223() throws Throwable {
+    public void test1211() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1223");
+            System.out.format("%n%s%n", "RegressionTest2.test1211");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -5634,9 +5331,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1224() throws Throwable {
+    public void test1212() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1224");
+            System.out.format("%n%s%n", "RegressionTest2.test1212");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria3 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
@@ -5650,9 +5347,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1225() throws Throwable {
+    public void test1213() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1225");
+            System.out.format("%n%s%n", "RegressionTest2.test1213");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria3 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
@@ -5712,25 +5409,25 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1226() throws Throwable {
+    public void test1214() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1226");
+            System.out.format("%n%s%n", "RegressionTest2.test1214");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0, Saldo: R$ 162.0", (double) (byte) 1);
     }
 
     @Test
-    public void test1227() throws Throwable {
+    public void test1215() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1227");
+            System.out.format("%n%s%n", "RegressionTest2.test1215");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("", (double) (byte) 10);
         double double3 = contaBancaria2.consultarSaldo();
         org.junit.Assert.assertTrue("'" + double3 + "' != '" + 10.0d + "'", double3 == 10.0d);
     }
 
     @Test
-    public void test1228() throws Throwable {
+    public void test1216() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1228");
+            System.out.format("%n%s%n", "RegressionTest2.test1216");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -5766,9 +5463,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1229() throws Throwable {
+    public void test1217() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1229");
+            System.out.format("%n%s%n", "RegressionTest2.test1217");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -5783,9 +5480,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1230() throws Throwable {
+    public void test1218() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1230");
+            System.out.format("%n%s%n", "RegressionTest2.test1218");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -5805,9 +5502,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1231() throws Throwable {
+    public void test1219() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1231");
+            System.out.format("%n%s%n", "RegressionTest2.test1219");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria3 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
@@ -5835,9 +5532,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1232() throws Throwable {
+    public void test1220() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1232");
+            System.out.format("%n%s%n", "RegressionTest2.test1220");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) '4');
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         contaBancaria2.depositar(0.0d);
@@ -5848,9 +5545,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1233() throws Throwable {
+    public void test1221() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1233");
+            System.out.format("%n%s%n", "RegressionTest2.test1221");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -5878,9 +5575,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1234() throws Throwable {
+    public void test1222() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1234");
+            System.out.format("%n%s%n", "RegressionTest2.test1222");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -5899,9 +5596,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1235() throws Throwable {
+    public void test1223() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1235");
+            System.out.format("%n%s%n", "RegressionTest2.test1223");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -5946,9 +5643,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1236() throws Throwable {
+    public void test1224() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1236");
+            System.out.format("%n%s%n", "RegressionTest2.test1224");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -5974,9 +5671,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1237() throws Throwable {
+    public void test1225() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1237");
+            System.out.format("%n%s%n", "RegressionTest2.test1225");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -6017,9 +5714,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1238() throws Throwable {
+    public void test1226() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1238");
+            System.out.format("%n%s%n", "RegressionTest2.test1226");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -6040,9 +5737,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1239() throws Throwable {
+    public void test1227() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1239");
+            System.out.format("%n%s%n", "RegressionTest2.test1227");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -6063,9 +5760,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1240() throws Throwable {
+    public void test1228() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1240");
+            System.out.format("%n%s%n", "RegressionTest2.test1228");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 52.0", (double) 0.0f);
@@ -6087,9 +5784,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1241() throws Throwable {
+    public void test1229() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1241");
+            System.out.format("%n%s%n", "RegressionTest2.test1229");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria3 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
@@ -6118,16 +5815,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1242() throws Throwable {
+    public void test1230() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1242");
+            System.out.format("%n%s%n", "RegressionTest2.test1230");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 97.0, Saldo: R$ 32.0", (double) (short) 1);
     }
 
     @Test
-    public void test1243() throws Throwable {
+    public void test1231() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1243");
+            System.out.format("%n%s%n", "RegressionTest2.test1231");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -6140,9 +5837,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1244() throws Throwable {
+    public void test1232() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1244");
+            System.out.format("%n%s%n", "RegressionTest2.test1232");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -6190,9 +5887,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1245() throws Throwable {
+    public void test1233() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1245");
+            System.out.format("%n%s%n", "RegressionTest2.test1233");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -6222,9 +5919,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1246() throws Throwable {
+    public void test1234() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1246");
+            System.out.format("%n%s%n", "RegressionTest2.test1234");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -6249,9 +5946,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1247() throws Throwable {
+    public void test1235() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1247");
+            System.out.format("%n%s%n", "RegressionTest2.test1235");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -6319,9 +6016,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1248() throws Throwable {
+    public void test1236() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1248");
+            System.out.format("%n%s%n", "RegressionTest2.test1236");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -6334,9 +6031,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1249() throws Throwable {
+    public void test1237() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1249");
+            System.out.format("%n%s%n", "RegressionTest2.test1237");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         boolean boolean5 = contaBancaria2.sacar((double) 1);
@@ -6347,16 +6044,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1250() throws Throwable {
+    public void test1238() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1250");
+            System.out.format("%n%s%n", "RegressionTest2.test1238");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ -1.0, Saldo: R$ 1.0", 35.0d);
     }
 
     @Test
-    public void test1251() throws Throwable {
+    public void test1239() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1251");
+            System.out.format("%n%s%n", "RegressionTest2.test1239");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean4 = contaBancaria2.sacar((double) (-1L));
         contaBancaria2.depositar((-1.0d));
@@ -6370,9 +6067,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1252() throws Throwable {
+    public void test1240() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1252");
+            System.out.format("%n%s%n", "RegressionTest2.test1240");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -6403,9 +6100,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1253() throws Throwable {
+    public void test1241() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1253");
+            System.out.format("%n%s%n", "RegressionTest2.test1241");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -6430,9 +6127,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1254() throws Throwable {
+    public void test1242() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1254");
+            System.out.format("%n%s%n", "RegressionTest2.test1242");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -6459,16 +6156,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1255() throws Throwable {
+    public void test1243() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1255");
+            System.out.format("%n%s%n", "RegressionTest2.test1243");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 51.0, Saldo: R$ 10.0", 32.0d);
     }
 
     @Test
-    public void test1256() throws Throwable {
+    public void test1244() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1256");
+            System.out.format("%n%s%n", "RegressionTest2.test1244");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean4 = contaBancaria2.sacar((double) (byte) 0);
         java.lang.String str5 = contaBancaria2.exibirDetalhes();
@@ -6481,9 +6178,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1257() throws Throwable {
+    public void test1245() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1257");
+            System.out.format("%n%s%n", "RegressionTest2.test1245");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria3 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
@@ -6495,9 +6192,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1258() throws Throwable {
+    public void test1246() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1258");
+            System.out.format("%n%s%n", "RegressionTest2.test1246");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -6539,9 +6236,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1259() throws Throwable {
+    public void test1247() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1259");
+            System.out.format("%n%s%n", "RegressionTest2.test1247");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -6586,9 +6283,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1260() throws Throwable {
+    public void test1248() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1260");
+            System.out.format("%n%s%n", "RegressionTest2.test1248");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -6599,9 +6296,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1261() throws Throwable {
+    public void test1249() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1261");
+            System.out.format("%n%s%n", "RegressionTest2.test1249");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -6664,9 +6361,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1262() throws Throwable {
+    public void test1250() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1262");
+            System.out.format("%n%s%n", "RegressionTest2.test1250");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -6693,9 +6390,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1263() throws Throwable {
+    public void test1251() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1263");
+            System.out.format("%n%s%n", "RegressionTest2.test1251");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         contaBancaria2.depositar((double) 10L);
         java.lang.String str5 = contaBancaria2.exibirDetalhes();
@@ -6705,9 +6402,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1264() throws Throwable {
+    public void test1252() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1264");
+            System.out.format("%n%s%n", "RegressionTest2.test1252");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -6764,16 +6461,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1265() throws Throwable {
+    public void test1253() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1265");
+            System.out.format("%n%s%n", "RegressionTest2.test1253");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 107.0, Saldo: R$ 116.0", 52.0d);
     }
 
     @Test
-    public void test1266() throws Throwable {
+    public void test1254() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1266");
+            System.out.format("%n%s%n", "RegressionTest2.test1254");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         banco0.listarContas();
@@ -6785,9 +6482,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1267() throws Throwable {
+    public void test1255() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1267");
+            System.out.format("%n%s%n", "RegressionTest2.test1255");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria3 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
@@ -6852,16 +6549,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1268() throws Throwable {
+    public void test1256() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1268");
+            System.out.format("%n%s%n", "RegressionTest2.test1256");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", 51.0d);
     }
 
     @Test
-    public void test1269() throws Throwable {
+    public void test1257() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1269");
+            System.out.format("%n%s%n", "RegressionTest2.test1257");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -6886,25 +6583,25 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1270() throws Throwable {
+    public void test1258() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1270");
+            System.out.format("%n%s%n", "RegressionTest2.test1258");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: , Saldo: R$ 1.0", 107.0d);
     }
 
     @Test
-    public void test1271() throws Throwable {
+    public void test1259() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1271");
+            System.out.format("%n%s%n", "RegressionTest2.test1259");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 214.0", 45.0d);
         double double3 = contaBancaria2.consultarSaldo();
         org.junit.Assert.assertTrue("'" + double3 + "' != '" + 45.0d + "'", double3 == 45.0d);
     }
 
     @Test
-    public void test1272() throws Throwable {
+    public void test1260() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1272");
+            System.out.format("%n%s%n", "RegressionTest2.test1260");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria3 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
@@ -6943,16 +6640,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1273() throws Throwable {
+    public void test1261() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1273");
+            System.out.format("%n%s%n", "RegressionTest2.test1261");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 20.0, Saldo: R$ 11.0", 184.0d);
     }
 
     @Test
-    public void test1274() throws Throwable {
+    public void test1262() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1274");
+            System.out.format("%n%s%n", "RegressionTest2.test1262");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -6977,9 +6674,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1275() throws Throwable {
+    public void test1263() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1275");
+            System.out.format("%n%s%n", "RegressionTest2.test1263");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -7008,9 +6705,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1276() throws Throwable {
+    public void test1264() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1276");
+            System.out.format("%n%s%n", "RegressionTest2.test1264");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) '4');
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         contaBancaria2.depositar(0.0d);
@@ -7025,9 +6722,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1277() throws Throwable {
+    public void test1265() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1277");
+            System.out.format("%n%s%n", "RegressionTest2.test1265");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ -1.0, Saldo: R$ 100.0", (double) 1.0f);
         boolean boolean4 = contaBancaria2.sacar(184.0d);
         java.lang.String str5 = contaBancaria2.exibirDetalhes();
@@ -7038,9 +6735,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1278() throws Throwable {
+    public void test1266() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1278");
+            System.out.format("%n%s%n", "RegressionTest2.test1266");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("", 0.0d);
@@ -7054,16 +6751,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1279() throws Throwable {
+    public void test1267() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1279");
+            System.out.format("%n%s%n", "RegressionTest2.test1267");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("", (double) 10.0f);
     }
 
     @Test
-    public void test1280() throws Throwable {
+    public void test1268() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1280");
+            System.out.format("%n%s%n", "RegressionTest2.test1268");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean4 = contaBancaria2.sacar((double) (-1L));
         contaBancaria2.depositar((-1.0d));
@@ -7078,9 +6775,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1281() throws Throwable {
+    public void test1269() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1281");
+            System.out.format("%n%s%n", "RegressionTest2.test1269");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -7108,9 +6805,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1282() throws Throwable {
+    public void test1270() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1282");
+            System.out.format("%n%s%n", "RegressionTest2.test1270");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -7121,9 +6818,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1283() throws Throwable {
+    public void test1271() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1283");
+            System.out.format("%n%s%n", "RegressionTest2.test1271");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -7159,9 +6856,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1284() throws Throwable {
+    public void test1272() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1284");
+            System.out.format("%n%s%n", "RegressionTest2.test1272");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 0.0", (double) 100L);
         double double3 = contaBancaria2.consultarSaldo();
         java.lang.String str4 = contaBancaria2.exibirDetalhes();
@@ -7173,9 +6870,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1285() throws Throwable {
+    public void test1273() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1285");
+            System.out.format("%n%s%n", "RegressionTest2.test1273");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -7219,9 +6916,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1286() throws Throwable {
+    public void test1274() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1286");
+            System.out.format("%n%s%n", "RegressionTest2.test1274");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: , Saldo: R$ 0.0, Saldo: R$ 0.0", 10.0d);
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         java.lang.String str4 = contaBancaria2.exibirDetalhes();
@@ -7230,18 +6927,18 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1287() throws Throwable {
+    public void test1275() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1287");
+            System.out.format("%n%s%n", "RegressionTest2.test1275");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 20.0, Saldo: R$ 32.0", (double) (short) 1);
         double double3 = contaBancaria2.consultarSaldo();
         org.junit.Assert.assertTrue("'" + double3 + "' != '" + 1.0d + "'", double3 == 1.0d);
     }
 
     @Test
-    public void test1288() throws Throwable {
+    public void test1276() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1288");
+            System.out.format("%n%s%n", "RegressionTest2.test1276");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 51.0", 100.0d);
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         boolean boolean5 = contaBancaria2.sacar(20.0d);
@@ -7250,18 +6947,18 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1289() throws Throwable {
+    public void test1277() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1289");
+            System.out.format("%n%s%n", "RegressionTest2.test1277");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 20.0, Saldo: R$ 32.0", (double) (byte) -1);
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Titular: Titular: Titular: hi!, Saldo: R$ 20.0, Saldo: R$ 32.0, Saldo: R$ -1.0" + "'", str3, "Titular: Titular: Titular: hi!, Saldo: R$ 20.0, Saldo: R$ 32.0, Saldo: R$ -1.0");
     }
 
     @Test
-    public void test1290() throws Throwable {
+    public void test1278() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1290");
+            System.out.format("%n%s%n", "RegressionTest2.test1278");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("", (double) ' ');
         contaBancaria2.depositar((double) 100);
         contaBancaria2.depositar((double) 'a');
@@ -7271,18 +6968,18 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1291() throws Throwable {
+    public void test1279() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1291");
+            System.out.format("%n%s%n", "RegressionTest2.test1279");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 20.0", (double) ' ');
         double double3 = contaBancaria2.consultarSaldo();
         org.junit.Assert.assertTrue("'" + double3 + "' != '" + 32.0d + "'", double3 == 32.0d);
     }
 
     @Test
-    public void test1292() throws Throwable {
+    public void test1280() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1292");
+            System.out.format("%n%s%n", "RegressionTest2.test1280");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -7304,9 +7001,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1293() throws Throwable {
+    public void test1281() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1293");
+            System.out.format("%n%s%n", "RegressionTest2.test1281");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -7322,9 +7019,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1294() throws Throwable {
+    public void test1282() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1294");
+            System.out.format("%n%s%n", "RegressionTest2.test1282");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -7394,9 +7091,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1295() throws Throwable {
+    public void test1283() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1295");
+            System.out.format("%n%s%n", "RegressionTest2.test1283");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("", (-1.0d));
         contaBancaria3.depositar(1.0d);
@@ -7420,9 +7117,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1296() throws Throwable {
+    public void test1284() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1296");
+            System.out.format("%n%s%n", "RegressionTest2.test1284");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 52.0", (double) (byte) 0);
         boolean boolean4 = contaBancaria2.sacar(88.0d);
         double double5 = contaBancaria2.consultarSaldo();
@@ -7431,9 +7128,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1297() throws Throwable {
+    public void test1285() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1297");
+            System.out.format("%n%s%n", "RegressionTest2.test1285");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -7459,9 +7156,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1298() throws Throwable {
+    public void test1286() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1298");
+            System.out.format("%n%s%n", "RegressionTest2.test1286");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -7478,9 +7175,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1299() throws Throwable {
+    public void test1287() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1299");
+            System.out.format("%n%s%n", "RegressionTest2.test1287");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 52.0", (double) 0.0f);
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         boolean boolean5 = contaBancaria2.sacar((double) 100L);
@@ -7495,9 +7192,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1300() throws Throwable {
+    public void test1288() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1300");
+            System.out.format("%n%s%n", "RegressionTest2.test1288");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 97.0, Saldo: R$ 100.0", (double) 'a');
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         contaBancaria2.depositar(9.0d);
@@ -7507,9 +7204,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1301() throws Throwable {
+    public void test1289() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1301");
+            System.out.format("%n%s%n", "RegressionTest2.test1289");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -7524,16 +7221,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1302() throws Throwable {
+    public void test1290() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1302");
+            System.out.format("%n%s%n", "RegressionTest2.test1290");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 19.0, Saldo: R$ 100.0", (double) 1.0f);
     }
 
     @Test
-    public void test1303() throws Throwable {
+    public void test1291() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1303");
+            System.out.format("%n%s%n", "RegressionTest2.test1291");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -7582,9 +7279,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1304() throws Throwable {
+    public void test1292() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1304");
+            System.out.format("%n%s%n", "RegressionTest2.test1292");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) '4');
         contaBancaria2.depositar((double) (byte) -1);
         double double5 = contaBancaria2.consultarSaldo();
@@ -7600,9 +7297,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1305() throws Throwable {
+    public void test1293() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1305");
+            System.out.format("%n%s%n", "RegressionTest2.test1293");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -7628,9 +7325,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1306() throws Throwable {
+    public void test1294() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1306");
+            System.out.format("%n%s%n", "RegressionTest2.test1294");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) '4');
         contaBancaria2.depositar((double) (byte) -1);
         double double5 = contaBancaria2.consultarSaldo();
@@ -7647,9 +7344,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1307() throws Throwable {
+    public void test1295() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1307");
+            System.out.format("%n%s%n", "RegressionTest2.test1295");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -7674,9 +7371,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1308() throws Throwable {
+    public void test1296() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1308");
+            System.out.format("%n%s%n", "RegressionTest2.test1296");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -7707,9 +7404,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1309() throws Throwable {
+    public void test1297() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1309");
+            System.out.format("%n%s%n", "RegressionTest2.test1297");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -7746,9 +7443,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1310() throws Throwable {
+    public void test1298() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1310");
+            System.out.format("%n%s%n", "RegressionTest2.test1298");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) '4');
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         contaBancaria2.depositar(0.0d);
@@ -7765,9 +7462,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1311() throws Throwable {
+    public void test1299() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1311");
+            System.out.format("%n%s%n", "RegressionTest2.test1299");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -7793,9 +7490,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1312() throws Throwable {
+    public void test1300() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1312");
+            System.out.format("%n%s%n", "RegressionTest2.test1300");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) 'a');
         contaBancaria2.depositar((double) (-1));
         contaBancaria2.depositar(10.0d);
@@ -7809,16 +7506,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1313() throws Throwable {
+    public void test1301() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1313");
+            System.out.format("%n%s%n", "RegressionTest2.test1301");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 9.0", 10.0d);
     }
 
     @Test
-    public void test1314() throws Throwable {
+    public void test1302() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1314");
+            System.out.format("%n%s%n", "RegressionTest2.test1302");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -7851,9 +7548,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1315() throws Throwable {
+    public void test1303() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1315");
+            System.out.format("%n%s%n", "RegressionTest2.test1303");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -7871,17 +7568,17 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1316() throws Throwable {
+    public void test1304() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1316");
+            System.out.format("%n%s%n", "RegressionTest2.test1304");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 1.0", (double) 1.0f);
         contaBancaria2.depositar((double) (byte) -1);
     }
 
     @Test
-    public void test1317() throws Throwable {
+    public void test1305() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1317");
+            System.out.format("%n%s%n", "RegressionTest2.test1305");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria3 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
@@ -7926,9 +7623,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1318() throws Throwable {
+    public void test1306() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1318");
+            System.out.format("%n%s%n", "RegressionTest2.test1306");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("", (double) (byte) 10);
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         double double4 = contaBancaria2.consultarSaldo();
@@ -7937,9 +7634,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1319() throws Throwable {
+    public void test1307() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1319");
+            System.out.format("%n%s%n", "RegressionTest2.test1307");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -7987,18 +7684,18 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1320() throws Throwable {
+    public void test1308() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1320");
+            System.out.format("%n%s%n", "RegressionTest2.test1308");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 47.0", 45.0d);
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Titular: Titular: hi!, Saldo: R$ 47.0, Saldo: R$ 45.0" + "'", str3, "Titular: Titular: hi!, Saldo: R$ 47.0, Saldo: R$ 45.0");
     }
 
     @Test
-    public void test1321() throws Throwable {
+    public void test1309() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1321");
+            System.out.format("%n%s%n", "RegressionTest2.test1309");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0", 162.0d);
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         java.lang.String str4 = contaBancaria2.exibirDetalhes();
@@ -8009,9 +7706,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1322() throws Throwable {
+    public void test1310() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1322");
+            System.out.format("%n%s%n", "RegressionTest2.test1310");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -8033,9 +7730,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1323() throws Throwable {
+    public void test1311() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1323");
+            System.out.format("%n%s%n", "RegressionTest2.test1311");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -8056,9 +7753,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1324() throws Throwable {
+    public void test1312() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1324");
+            System.out.format("%n%s%n", "RegressionTest2.test1312");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -8083,9 +7780,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1325() throws Throwable {
+    public void test1313() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1325");
+            System.out.format("%n%s%n", "RegressionTest2.test1313");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -8129,80 +7826,18 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1326() throws Throwable {
+    public void test1314() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1326");
+            System.out.format("%n%s%n", "RegressionTest2.test1314");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 51.0, Saldo: R$ -1.0", (double) (-1.0f));
         boolean boolean4 = contaBancaria2.sacar((double) (-1.0f));
         org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
     }
 
     @Test
-    public void test1327() throws Throwable {
+    public void test1315() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1327");
-        com.example.Banco banco0 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco0.adicionarConta(contaBancaria3);
-        banco0.listarContas();
-        banco0.listarContas();
-        com.example.ContaBancaria contaBancaria9 = new com.example.ContaBancaria("", 10.0d);
-        banco0.adicionarConta(contaBancaria9);
-        com.example.ContaBancaria contaBancaria13 = new com.example.ContaBancaria("hi!", (double) '4');
-        contaBancaria13.depositar((double) (byte) -1);
-        banco0.adicionarConta(contaBancaria13);
-        com.example.ContaBancaria contaBancaria18 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 52.0");
-        com.example.ContaBancaria contaBancaria21 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 97.0", (double) (short) 100);
-        banco0.adicionarConta(contaBancaria21);
-        com.example.Banco banco23 = new com.example.Banco();
-        banco23.listarContas();
-        com.example.ContaBancaria contaBancaria26 = banco23.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
-        com.example.Banco banco27 = new com.example.Banco();
-        com.example.Banco banco28 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria31 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco28.adicionarConta(contaBancaria31);
-        banco27.adicionarConta(contaBancaria31);
-        com.example.ContaBancaria contaBancaria36 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco27.adicionarConta(contaBancaria36);
-        com.example.Banco banco38 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria41 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco38.adicionarConta(contaBancaria41);
-        banco38.listarContas();
-        banco38.listarContas();
-        com.example.ContaBancaria contaBancaria47 = new com.example.ContaBancaria("", 10.0d);
-        banco38.adicionarConta(contaBancaria47);
-        banco27.adicionarConta(contaBancaria47);
-        banco23.adicionarConta(contaBancaria47);
-        com.example.ContaBancaria contaBancaria52 = banco23.buscarContaPorTitular("Titular: hi!, Saldo: R$ 97.0");
-        com.example.ContaBancaria contaBancaria55 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
-        boolean boolean57 = contaBancaria55.sacar((double) (-1L));
-        contaBancaria55.depositar((-1.0d));
-        java.lang.String str60 = contaBancaria55.exibirDetalhes();
-        double double61 = contaBancaria55.consultarSaldo();
-        boolean boolean63 = contaBancaria55.sacar((double) (short) -1);
-        banco23.adicionarConta(contaBancaria55);
-        boolean boolean66 = contaBancaria55.sacar(35.0d);
-        banco0.adicionarConta(contaBancaria55);
-        com.example.ContaBancaria contaBancaria70 = new com.example.ContaBancaria("Titular: Titular: Titular: hi!, Saldo: R$ 51.0, Saldo: R$ 100.0, Saldo: R$ 100.0", 100.0d);
-        java.lang.String str71 = contaBancaria70.exibirDetalhes();
-        banco0.adicionarConta(contaBancaria70);
-        com.example.ContaBancaria contaBancaria74 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 147.0");
-        org.junit.Assert.assertNotNull(contaBancaria18);
-        org.junit.Assert.assertNull(contaBancaria26);
-        org.junit.Assert.assertNull(contaBancaria52);
-        org.junit.Assert.assertTrue("'" + boolean57 + "' != '" + false + "'", boolean57 == false);
-        org.junit.Assert.assertEquals("'" + str60 + "' != '" + "Titular: hi!, Saldo: R$ 10.0" + "'", str60, "Titular: hi!, Saldo: R$ 10.0");
-        org.junit.Assert.assertTrue("'" + double61 + "' != '" + 10.0d + "'", double61 == 10.0d);
-        org.junit.Assert.assertTrue("'" + boolean63 + "' != '" + false + "'", boolean63 == false);
-        org.junit.Assert.assertTrue("'" + boolean66 + "' != '" + false + "'", boolean66 == false);
-        org.junit.Assert.assertEquals("'" + str71 + "' != '" + "Titular: Titular: Titular: Titular: hi!, Saldo: R$ 51.0, Saldo: R$ 100.0, Saldo: R$ 100.0, Saldo: R$ 100.0" + "'", str71, "Titular: Titular: Titular: Titular: hi!, Saldo: R$ 51.0, Saldo: R$ 100.0, Saldo: R$ 100.0, Saldo: R$ 100.0");
-        org.junit.Assert.assertNull(contaBancaria74);
-    }
-
-    @Test
-    public void test1328() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1328");
+            System.out.format("%n%s%n", "RegressionTest2.test1315");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 52.0", (double) 0.0f);
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         boolean boolean5 = contaBancaria2.sacar((double) 100L);
@@ -8215,67 +7850,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1329() throws Throwable {
+    public void test1316() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1329");
-        com.example.Banco banco0 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco0.adicionarConta(contaBancaria3);
-        banco0.listarContas();
-        banco0.listarContas();
-        com.example.Banco banco7 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria10 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco7.adicionarConta(contaBancaria10);
-        banco7.listarContas();
-        banco7.listarContas();
-        com.example.ContaBancaria contaBancaria16 = new com.example.ContaBancaria("", 10.0d);
-        banco7.adicionarConta(contaBancaria16);
-        com.example.ContaBancaria contaBancaria20 = new com.example.ContaBancaria("hi!", (double) '4');
-        contaBancaria20.depositar((double) (byte) -1);
-        banco7.adicionarConta(contaBancaria20);
-        com.example.ContaBancaria contaBancaria25 = banco7.buscarContaPorTitular("Titular: hi!, Saldo: R$ 52.0");
-        java.lang.String str26 = contaBancaria25.exibirDetalhes();
-        banco0.adicionarConta(contaBancaria25);
-        com.example.ContaBancaria contaBancaria29 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 52.0");
-        com.example.Banco banco30 = new com.example.Banco();
-        banco30.listarContas();
-        com.example.ContaBancaria contaBancaria33 = banco30.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
-        com.example.Banco banco34 = new com.example.Banco();
-        com.example.Banco banco35 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria38 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco35.adicionarConta(contaBancaria38);
-        banco34.adicionarConta(contaBancaria38);
-        com.example.ContaBancaria contaBancaria43 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco34.adicionarConta(contaBancaria43);
-        com.example.Banco banco45 = new com.example.Banco();
-        com.example.ContaBancaria contaBancaria48 = new com.example.ContaBancaria("hi!", (double) 'a');
-        banco45.adicionarConta(contaBancaria48);
-        banco45.listarContas();
-        banco45.listarContas();
-        com.example.ContaBancaria contaBancaria54 = new com.example.ContaBancaria("", 10.0d);
-        banco45.adicionarConta(contaBancaria54);
-        banco34.adicionarConta(contaBancaria54);
-        banco30.adicionarConta(contaBancaria54);
-        banco0.adicionarConta(contaBancaria54);
-        com.example.ContaBancaria contaBancaria61 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ -1.0", (double) 100.0f);
-        java.lang.String str62 = contaBancaria61.exibirDetalhes();
-        boolean boolean64 = contaBancaria61.sacar(152.0d);
-        banco0.adicionarConta(contaBancaria61);
-        com.example.ContaBancaria contaBancaria67 = banco0.buscarContaPorTitular("Titular: Titular: hi!, Saldo: R$ 107.0, Saldo: R$ 100.0");
-        banco0.listarContas();
-        org.junit.Assert.assertNotNull(contaBancaria25);
-        org.junit.Assert.assertEquals("'" + str26 + "' != '" + "Titular: hi!, Saldo: R$ 52.0" + "'", str26, "Titular: hi!, Saldo: R$ 52.0");
-        org.junit.Assert.assertNotNull(contaBancaria29);
-        org.junit.Assert.assertNull(contaBancaria33);
-        org.junit.Assert.assertEquals("'" + str62 + "' != '" + "Titular: Titular: hi!, Saldo: R$ -1.0, Saldo: R$ 100.0" + "'", str62, "Titular: Titular: hi!, Saldo: R$ -1.0, Saldo: R$ 100.0");
-        org.junit.Assert.assertTrue("'" + boolean64 + "' != '" + false + "'", boolean64 == false);
-        org.junit.Assert.assertNull(contaBancaria67);
-    }
-
-    @Test
-    public void test1330() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1330");
+            System.out.format("%n%s%n", "RegressionTest2.test1316");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -8288,23 +7865,23 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1331() throws Throwable {
+    public void test1317() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1331");
+            System.out.format("%n%s%n", "RegressionTest2.test1317");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 47.0, Saldo: R$ 45.0", (double) (byte) 1);
     }
 
     @Test
-    public void test1332() throws Throwable {
+    public void test1318() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1332");
+            System.out.format("%n%s%n", "RegressionTest2.test1318");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 100.0, Saldo: R$ 0.0", 193.0d);
     }
 
     @Test
-    public void test1333() throws Throwable {
+    public void test1319() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1333");
+            System.out.format("%n%s%n", "RegressionTest2.test1319");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -8321,25 +7898,25 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1334() throws Throwable {
+    public void test1320() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1334");
+            System.out.format("%n%s%n", "RegressionTest2.test1320");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 52.0", (double) (short) 100);
         boolean boolean4 = contaBancaria2.sacar(0.0d);
         org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
     }
 
     @Test
-    public void test1335() throws Throwable {
+    public void test1321() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1335");
+            System.out.format("%n%s%n", "RegressionTest2.test1321");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: Titular: hi!, Saldo: R$ -1.0, Saldo: R$ 87.0, Saldo: R$ 10.0", 110.0d);
     }
 
     @Test
-    public void test1336() throws Throwable {
+    public void test1322() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1336");
+            System.out.format("%n%s%n", "RegressionTest2.test1322");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
         boolean boolean5 = contaBancaria3.sacar((double) (-1L));
@@ -8372,25 +7949,25 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1337() throws Throwable {
+    public void test1323() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1337");
+            System.out.format("%n%s%n", "RegressionTest2.test1323");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 197.0", (double) (-1L));
     }
 
     @Test
-    public void test1338() throws Throwable {
+    public void test1324() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1338");
+            System.out.format("%n%s%n", "RegressionTest2.test1324");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0, Saldo: R$ 162.0, Saldo: R$ 32.0", (double) '4');
         boolean boolean4 = contaBancaria2.sacar((double) 1.0f);
         org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + true + "'", boolean4 == true);
     }
 
     @Test
-    public void test1339() throws Throwable {
+    public void test1325() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1339");
+            System.out.format("%n%s%n", "RegressionTest2.test1325");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -8417,9 +7994,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1340() throws Throwable {
+    public void test1326() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1340");
+            System.out.format("%n%s%n", "RegressionTest2.test1326");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -8467,18 +8044,18 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1341() throws Throwable {
+    public void test1327() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1341");
+            System.out.format("%n%s%n", "RegressionTest2.test1327");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 19.0, Saldo: R$ 100.0", (-1.0d));
         java.lang.String str3 = contaBancaria2.exibirDetalhes();
         org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Titular: Titular: Titular: hi!, Saldo: R$ 19.0, Saldo: R$ 100.0, Saldo: R$ -1.0" + "'", str3, "Titular: Titular: Titular: hi!, Saldo: R$ 19.0, Saldo: R$ 100.0, Saldo: R$ -1.0");
     }
 
     @Test
-    public void test1342() throws Throwable {
+    public void test1328() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1342");
+            System.out.format("%n%s%n", "RegressionTest2.test1328");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -8507,9 +8084,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1343() throws Throwable {
+    public void test1329() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1343");
+            System.out.format("%n%s%n", "RegressionTest2.test1329");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 32.0", (double) (short) 10);
         boolean boolean4 = contaBancaria2.sacar((double) (-1.0f));
         java.lang.String str5 = contaBancaria2.exibirDetalhes();
@@ -8518,9 +8095,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1344() throws Throwable {
+    public void test1330() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1344");
+            System.out.format("%n%s%n", "RegressionTest2.test1330");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("", 0.0d);
@@ -8582,18 +8159,18 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1345() throws Throwable {
+    public void test1331() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1345");
+            System.out.format("%n%s%n", "RegressionTest2.test1331");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) (-1.0f));
         java.lang.Class<?> wildcardClass3 = contaBancaria2.getClass();
         org.junit.Assert.assertNotNull(wildcardClass3);
     }
 
     @Test
-    public void test1346() throws Throwable {
+    public void test1332() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1346");
+            System.out.format("%n%s%n", "RegressionTest2.test1332");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -8618,9 +8195,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1347() throws Throwable {
+    public void test1333() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1347");
+            System.out.format("%n%s%n", "RegressionTest2.test1333");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("", (double) ' ');
         contaBancaria2.depositar((double) 100);
         contaBancaria2.depositar((double) 'a');
@@ -8631,16 +8208,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1348() throws Throwable {
+    public void test1334() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1348");
+            System.out.format("%n%s%n", "RegressionTest2.test1334");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 32.0", 0.0d);
     }
 
     @Test
-    public void test1349() throws Throwable {
+    public void test1335() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1349");
+            System.out.format("%n%s%n", "RegressionTest2.test1335");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -8711,9 +8288,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1350() throws Throwable {
+    public void test1336() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1350");
+            System.out.format("%n%s%n", "RegressionTest2.test1336");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -8757,9 +8334,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1351() throws Throwable {
+    public void test1337() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1351");
+            System.out.format("%n%s%n", "RegressionTest2.test1337");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -8776,9 +8353,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1352() throws Throwable {
+    public void test1338() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1352");
+            System.out.format("%n%s%n", "RegressionTest2.test1338");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria3 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
@@ -8798,9 +8375,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1353() throws Throwable {
+    public void test1339() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1353");
+            System.out.format("%n%s%n", "RegressionTest2.test1339");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
         banco0.adicionarConta(contaBancaria3);
@@ -8859,9 +8436,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1354() throws Throwable {
+    public void test1340() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1354");
+            System.out.format("%n%s%n", "RegressionTest2.test1340");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -8893,16 +8470,16 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1355() throws Throwable {
+    public void test1341() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1355");
+            System.out.format("%n%s%n", "RegressionTest2.test1341");
         com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 10.0, Saldo: R$ -1.0", 11.0d);
     }
 
     @Test
-    public void test1356() throws Throwable {
+    public void test1342() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1356");
+            System.out.format("%n%s%n", "RegressionTest2.test1342");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("", 0.0d);
@@ -8965,9 +8542,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1357() throws Throwable {
+    public void test1343() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1357");
+            System.out.format("%n%s%n", "RegressionTest2.test1343");
         com.example.Banco banco0 = new com.example.Banco();
         com.example.Banco banco1 = new com.example.Banco();
         com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
@@ -8998,9 +8575,9 @@ public class RegressionTest2 {
     }
 
     @Test
-    public void test1358() throws Throwable {
+    public void test1344() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest2.test1358");
+            System.out.format("%n%s%n", "RegressionTest2.test1344");
         com.example.Banco banco0 = new com.example.Banco();
         banco0.listarContas();
         com.example.Banco banco2 = new com.example.Banco();
@@ -9020,6 +8597,872 @@ public class RegressionTest2 {
         com.example.ContaBancaria contaBancaria27 = banco0.buscarContaPorTitular("Titular: Titular: hi!, Saldo: R$ 100.0, Saldo: R$ 0.0");
         org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
         org.junit.Assert.assertNull(contaBancaria27);
+    }
+
+    @Test
+    public void test1345() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1345");
+        com.example.Banco banco0 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco0.adicionarConta(contaBancaria3);
+        banco0.listarContas();
+        banco0.listarContas();
+        com.example.ContaBancaria contaBancaria9 = new com.example.ContaBancaria("", 10.0d);
+        banco0.adicionarConta(contaBancaria9);
+        com.example.ContaBancaria contaBancaria13 = new com.example.ContaBancaria("hi!", (double) '4');
+        contaBancaria13.depositar((double) (byte) -1);
+        banco0.adicionarConta(contaBancaria13);
+        com.example.ContaBancaria contaBancaria18 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 52.0");
+        java.lang.String str19 = contaBancaria18.exibirDetalhes();
+        boolean boolean21 = contaBancaria18.sacar((double) (byte) -1);
+        boolean boolean23 = contaBancaria18.sacar((double) 'a');
+        boolean boolean25 = contaBancaria18.sacar(10.0d);
+        org.junit.Assert.assertNotNull(contaBancaria18);
+        org.junit.Assert.assertEquals("'" + str19 + "' != '" + "Titular: hi!, Saldo: R$ 52.0" + "'", str19, "Titular: hi!, Saldo: R$ 52.0");
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + true + "'", boolean25 == true);
+    }
+
+    @Test
+    public void test1346() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1346");
+        com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 117.0", 47.0d);
+    }
+
+    @Test
+    public void test1347() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1347");
+        com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 9.0", (double) 10L);
+        java.lang.String str3 = contaBancaria2.exibirDetalhes();
+        org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Titular: Titular: hi!, Saldo: R$ 9.0, Saldo: R$ 10.0" + "'", str3, "Titular: Titular: hi!, Saldo: R$ 9.0, Saldo: R$ 10.0");
+    }
+
+    @Test
+    public void test1348() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1348");
+        com.example.Banco banco0 = new com.example.Banco();
+        banco0.listarContas();
+        com.example.Banco banco2 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria5 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco2.adicionarConta(contaBancaria5);
+        banco2.listarContas();
+        com.example.ContaBancaria contaBancaria10 = new com.example.ContaBancaria("hi!", (double) (short) 100);
+        banco2.adicionarConta(contaBancaria10);
+        com.example.ContaBancaria contaBancaria14 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
+        boolean boolean16 = contaBancaria14.sacar((double) (-1L));
+        contaBancaria14.depositar((-1.0d));
+        banco2.adicionarConta(contaBancaria14);
+        banco0.adicionarConta(contaBancaria14);
+        com.example.ContaBancaria contaBancaria23 = new com.example.ContaBancaria("hi!", (double) ' ');
+        banco0.adicionarConta(contaBancaria23);
+        contaBancaria23.depositar(0.0d);
+        boolean boolean28 = contaBancaria23.sacar((double) 'a');
+        java.lang.String str29 = contaBancaria23.exibirDetalhes();
+        java.lang.Class<?> wildcardClass30 = contaBancaria23.getClass();
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
+        org.junit.Assert.assertEquals("'" + str29 + "' != '" + "Titular: hi!, Saldo: R$ 32.0" + "'", str29, "Titular: hi!, Saldo: R$ 32.0");
+        org.junit.Assert.assertNotNull(wildcardClass30);
+    }
+
+    @Test
+    public void test1349() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1349");
+        com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) '4');
+        contaBancaria2.depositar((double) (byte) -1);
+        contaBancaria2.depositar(52.0d);
+        contaBancaria2.depositar(45.0d);
+    }
+
+    @Test
+    public void test1350() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1350");
+        com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 20.0", (double) 1);
+        java.lang.String str3 = contaBancaria2.exibirDetalhes();
+        java.lang.String str4 = contaBancaria2.exibirDetalhes();
+        org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Titular: Titular: hi!, Saldo: R$ 20.0, Saldo: R$ 1.0" + "'", str3, "Titular: Titular: hi!, Saldo: R$ 20.0, Saldo: R$ 1.0");
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Titular: Titular: hi!, Saldo: R$ 20.0, Saldo: R$ 1.0" + "'", str4, "Titular: Titular: hi!, Saldo: R$ 20.0, Saldo: R$ 1.0");
+    }
+
+    @Test
+    public void test1351() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1351");
+        com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 214.0", 45.0d);
+        java.lang.String str3 = contaBancaria2.exibirDetalhes();
+        org.junit.Assert.assertEquals("'" + str3 + "' != '" + "Titular: Titular: hi!, Saldo: R$ 214.0, Saldo: R$ 45.0" + "'", str3, "Titular: Titular: hi!, Saldo: R$ 214.0, Saldo: R$ 45.0");
+    }
+
+    @Test
+    public void test1352() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1352");
+        com.example.Banco banco0 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
+        boolean boolean5 = contaBancaria3.sacar((double) (-1L));
+        banco0.adicionarConta(contaBancaria3);
+        com.example.ContaBancaria contaBancaria8 = banco0.buscarContaPorTitular("");
+        com.example.Banco banco9 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria12 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco9.adicionarConta(contaBancaria12);
+        banco9.listarContas();
+        com.example.ContaBancaria contaBancaria17 = new com.example.ContaBancaria("hi!", (double) (short) 100);
+        banco9.adicionarConta(contaBancaria17);
+        banco9.listarContas();
+        com.example.ContaBancaria contaBancaria22 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
+        banco9.adicionarConta(contaBancaria22);
+        double double24 = contaBancaria22.consultarSaldo();
+        double double25 = contaBancaria22.consultarSaldo();
+        java.lang.String str26 = contaBancaria22.exibirDetalhes();
+        boolean boolean28 = contaBancaria22.sacar((double) 0.0f);
+        contaBancaria22.depositar((double) '#');
+        contaBancaria22.depositar((double) '4');
+        banco0.adicionarConta(contaBancaria22);
+        double double34 = contaBancaria22.consultarSaldo();
+        contaBancaria22.depositar(0.0d);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertNotNull(contaBancaria8);
+        org.junit.Assert.assertTrue("'" + double24 + "' != '" + 10.0d + "'", double24 == 10.0d);
+        org.junit.Assert.assertTrue("'" + double25 + "' != '" + 10.0d + "'", double25 == 10.0d);
+        org.junit.Assert.assertEquals("'" + str26 + "' != '" + "Titular: hi!, Saldo: R$ 10.0" + "'", str26, "Titular: hi!, Saldo: R$ 10.0");
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
+        org.junit.Assert.assertTrue("'" + double34 + "' != '" + 97.0d + "'", double34 == 97.0d);
+    }
+
+    @Test
+    public void test1353() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1353");
+        com.example.Banco banco0 = new com.example.Banco();
+        com.example.Banco banco1 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria4 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco1.adicionarConta(contaBancaria4);
+        banco0.adicionarConta(contaBancaria4);
+        com.example.ContaBancaria contaBancaria9 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco0.adicionarConta(contaBancaria9);
+        com.example.ContaBancaria contaBancaria12 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 100.0");
+        banco0.listarContas();
+        com.example.ContaBancaria contaBancaria16 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0", 10.0d);
+        boolean boolean18 = contaBancaria16.sacar(0.0d);
+        banco0.adicionarConta(contaBancaria16);
+        com.example.ContaBancaria contaBancaria22 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 51.0", 0.0d);
+        boolean boolean24 = contaBancaria22.sacar((double) 100L);
+        contaBancaria22.depositar(182.0d);
+        banco0.adicionarConta(contaBancaria22);
+        com.example.Banco banco28 = new com.example.Banco();
+        banco28.listarContas();
+        com.example.Banco banco30 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria33 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco30.adicionarConta(contaBancaria33);
+        banco30.listarContas();
+        com.example.ContaBancaria contaBancaria38 = new com.example.ContaBancaria("hi!", (double) (short) 100);
+        banco30.adicionarConta(contaBancaria38);
+        com.example.ContaBancaria contaBancaria42 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
+        boolean boolean44 = contaBancaria42.sacar((double) (-1L));
+        contaBancaria42.depositar((-1.0d));
+        banco30.adicionarConta(contaBancaria42);
+        banco28.adicionarConta(contaBancaria42);
+        com.example.ContaBancaria contaBancaria51 = new com.example.ContaBancaria("hi!", (double) ' ');
+        banco28.adicionarConta(contaBancaria51);
+        double double53 = contaBancaria51.consultarSaldo();
+        contaBancaria51.depositar((double) 1L);
+        boolean boolean57 = contaBancaria51.sacar((double) 10.0f);
+        boolean boolean59 = contaBancaria51.sacar((double) (byte) 1);
+        banco0.adicionarConta(contaBancaria51);
+        org.junit.Assert.assertNull(contaBancaria12);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
+        org.junit.Assert.assertTrue("'" + boolean44 + "' != '" + false + "'", boolean44 == false);
+        org.junit.Assert.assertTrue("'" + double53 + "' != '" + 32.0d + "'", double53 == 32.0d);
+        org.junit.Assert.assertTrue("'" + boolean57 + "' != '" + true + "'", boolean57 == true);
+        org.junit.Assert.assertTrue("'" + boolean59 + "' != '" + true + "'", boolean59 == true);
+    }
+
+    @Test
+    public void test1354() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1354");
+        com.example.Banco banco0 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco0.adicionarConta(contaBancaria3);
+        banco0.listarContas();
+        banco0.listarContas();
+        com.example.ContaBancaria contaBancaria9 = new com.example.ContaBancaria("", 10.0d);
+        banco0.adicionarConta(contaBancaria9);
+        com.example.ContaBancaria contaBancaria13 = new com.example.ContaBancaria("hi!", (double) '4');
+        contaBancaria13.depositar((double) (byte) -1);
+        banco0.adicionarConta(contaBancaria13);
+        com.example.ContaBancaria contaBancaria18 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 52.0");
+        com.example.ContaBancaria contaBancaria21 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 97.0", (double) (short) 100);
+        banco0.adicionarConta(contaBancaria21);
+        com.example.Banco banco23 = new com.example.Banco();
+        banco23.listarContas();
+        com.example.ContaBancaria contaBancaria26 = banco23.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
+        com.example.Banco banco27 = new com.example.Banco();
+        com.example.Banco banco28 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria31 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco28.adicionarConta(contaBancaria31);
+        banco27.adicionarConta(contaBancaria31);
+        com.example.ContaBancaria contaBancaria36 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco27.adicionarConta(contaBancaria36);
+        com.example.Banco banco38 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria41 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco38.adicionarConta(contaBancaria41);
+        banco38.listarContas();
+        banco38.listarContas();
+        com.example.ContaBancaria contaBancaria47 = new com.example.ContaBancaria("", 10.0d);
+        banco38.adicionarConta(contaBancaria47);
+        banco27.adicionarConta(contaBancaria47);
+        banco23.adicionarConta(contaBancaria47);
+        com.example.ContaBancaria contaBancaria52 = banco23.buscarContaPorTitular("Titular: hi!, Saldo: R$ 97.0");
+        com.example.ContaBancaria contaBancaria55 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
+        boolean boolean57 = contaBancaria55.sacar((double) (-1L));
+        contaBancaria55.depositar((-1.0d));
+        java.lang.String str60 = contaBancaria55.exibirDetalhes();
+        double double61 = contaBancaria55.consultarSaldo();
+        boolean boolean63 = contaBancaria55.sacar((double) (short) -1);
+        banco23.adicionarConta(contaBancaria55);
+        boolean boolean66 = contaBancaria55.sacar(35.0d);
+        banco0.adicionarConta(contaBancaria55);
+        com.example.ContaBancaria contaBancaria70 = new com.example.ContaBancaria("Titular: Titular: Titular: hi!, Saldo: R$ 51.0, Saldo: R$ 100.0, Saldo: R$ 100.0", 100.0d);
+        java.lang.String str71 = contaBancaria70.exibirDetalhes();
+        banco0.adicionarConta(contaBancaria70);
+        com.example.ContaBancaria contaBancaria74 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 147.0");
+        com.example.ContaBancaria contaBancaria76 = banco0.buscarContaPorTitular("Titular: Titular: Titular: , Saldo: R$ 0.0, Saldo: R$ 0.0, Saldo: R$ 10.0");
+        org.junit.Assert.assertNotNull(contaBancaria18);
+        org.junit.Assert.assertNull(contaBancaria26);
+        org.junit.Assert.assertNull(contaBancaria52);
+        org.junit.Assert.assertTrue("'" + boolean57 + "' != '" + false + "'", boolean57 == false);
+        org.junit.Assert.assertEquals("'" + str60 + "' != '" + "Titular: hi!, Saldo: R$ 10.0" + "'", str60, "Titular: hi!, Saldo: R$ 10.0");
+        org.junit.Assert.assertTrue("'" + double61 + "' != '" + 10.0d + "'", double61 == 10.0d);
+        org.junit.Assert.assertTrue("'" + boolean63 + "' != '" + false + "'", boolean63 == false);
+        org.junit.Assert.assertTrue("'" + boolean66 + "' != '" + false + "'", boolean66 == false);
+        org.junit.Assert.assertEquals("'" + str71 + "' != '" + "Titular: Titular: Titular: Titular: hi!, Saldo: R$ 51.0, Saldo: R$ 100.0, Saldo: R$ 100.0, Saldo: R$ 100.0" + "'", str71, "Titular: Titular: Titular: Titular: hi!, Saldo: R$ 51.0, Saldo: R$ 100.0, Saldo: R$ 100.0, Saldo: R$ 100.0");
+        org.junit.Assert.assertNull(contaBancaria74);
+        org.junit.Assert.assertNull(contaBancaria76);
+    }
+
+    @Test
+    public void test1355() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1355");
+        com.example.Banco banco0 = new com.example.Banco();
+        banco0.listarContas();
+        com.example.ContaBancaria contaBancaria3 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
+        com.example.Banco banco4 = new com.example.Banco();
+        com.example.Banco banco5 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria8 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco5.adicionarConta(contaBancaria8);
+        banco4.adicionarConta(contaBancaria8);
+        com.example.ContaBancaria contaBancaria13 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco4.adicionarConta(contaBancaria13);
+        com.example.Banco banco15 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria18 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco15.adicionarConta(contaBancaria18);
+        banco15.listarContas();
+        banco15.listarContas();
+        com.example.ContaBancaria contaBancaria24 = new com.example.ContaBancaria("", 10.0d);
+        banco15.adicionarConta(contaBancaria24);
+        banco4.adicionarConta(contaBancaria24);
+        banco0.adicionarConta(contaBancaria24);
+        boolean boolean29 = contaBancaria24.sacar((double) '#');
+        java.lang.String str30 = contaBancaria24.exibirDetalhes();
+        java.lang.String str31 = contaBancaria24.exibirDetalhes();
+        boolean boolean33 = contaBancaria24.sacar(0.0d);
+        java.lang.String str34 = contaBancaria24.exibirDetalhes();
+        org.junit.Assert.assertNull(contaBancaria3);
+        org.junit.Assert.assertTrue("'" + boolean29 + "' != '" + false + "'", boolean29 == false);
+        org.junit.Assert.assertEquals("'" + str30 + "' != '" + "Titular: , Saldo: R$ 10.0" + "'", str30, "Titular: , Saldo: R$ 10.0");
+        org.junit.Assert.assertEquals("'" + str31 + "' != '" + "Titular: , Saldo: R$ 10.0" + "'", str31, "Titular: , Saldo: R$ 10.0");
+        org.junit.Assert.assertTrue("'" + boolean33 + "' != '" + false + "'", boolean33 == false);
+        org.junit.Assert.assertEquals("'" + str34 + "' != '" + "Titular: , Saldo: R$ 10.0" + "'", str34, "Titular: , Saldo: R$ 10.0");
+    }
+
+    @Test
+    public void test1356() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1356");
+        com.example.Banco banco0 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco0.adicionarConta(contaBancaria3);
+        banco0.listarContas();
+        com.example.ContaBancaria contaBancaria8 = new com.example.ContaBancaria("hi!", (double) (short) 100);
+        banco0.adicionarConta(contaBancaria8);
+        banco0.listarContas();
+        com.example.ContaBancaria contaBancaria13 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
+        banco0.adicionarConta(contaBancaria13);
+        com.example.ContaBancaria contaBancaria16 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ -1.0");
+        com.example.ContaBancaria contaBancaria18 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 97.0");
+        com.example.ContaBancaria contaBancaria21 = new com.example.ContaBancaria("hi!", (double) (-1.0f));
+        boolean boolean23 = contaBancaria21.sacar((double) '#');
+        banco0.adicionarConta(contaBancaria21);
+        boolean boolean26 = contaBancaria21.sacar((double) ' ');
+        org.junit.Assert.assertNull(contaBancaria16);
+        org.junit.Assert.assertNotNull(contaBancaria18);
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+    }
+
+    @Test
+    public void test1357() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1357");
+        com.example.Banco banco0 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
+        boolean boolean5 = contaBancaria3.sacar((double) (-1L));
+        banco0.adicionarConta(contaBancaria3);
+        banco0.listarContas();
+        com.example.Banco banco8 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria11 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco8.adicionarConta(contaBancaria11);
+        banco8.listarContas();
+        banco8.listarContas();
+        com.example.ContaBancaria contaBancaria17 = new com.example.ContaBancaria("", 10.0d);
+        banco8.adicionarConta(contaBancaria17);
+        com.example.ContaBancaria contaBancaria21 = new com.example.ContaBancaria("hi!", (double) '4');
+        contaBancaria21.depositar((double) (byte) -1);
+        banco8.adicionarConta(contaBancaria21);
+        com.example.ContaBancaria contaBancaria26 = banco8.buscarContaPorTitular("Titular: hi!, Saldo: R$ 52.0");
+        com.example.ContaBancaria contaBancaria29 = new com.example.ContaBancaria("hi!", (double) (-1.0f));
+        boolean boolean31 = contaBancaria29.sacar((double) 100);
+        double double32 = contaBancaria29.consultarSaldo();
+        banco8.adicionarConta(contaBancaria29);
+        boolean boolean35 = contaBancaria29.sacar((double) (byte) 1);
+        banco0.adicionarConta(contaBancaria29);
+        com.example.ContaBancaria contaBancaria38 = banco0.buscarContaPorTitular("Titular: , Saldo: R$ 10.0");
+        com.example.ContaBancaria contaBancaria40 = banco0.buscarContaPorTitular("Titular: Titular: hi!, Saldo: R$ 214.0, Saldo: R$ 45.0");
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertNotNull(contaBancaria26);
+        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + false + "'", boolean31 == false);
+        org.junit.Assert.assertTrue("'" + double32 + "' != '" + (-1.0d) + "'", double32 == (-1.0d));
+        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + false + "'", boolean35 == false);
+        org.junit.Assert.assertNull(contaBancaria38);
+        org.junit.Assert.assertNull(contaBancaria40);
+    }
+
+    @Test
+    public void test1358() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1358");
+        com.example.Banco banco0 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco0.adicionarConta(contaBancaria3);
+        banco0.listarContas();
+        banco0.listarContas();
+        com.example.Banco banco7 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria10 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco7.adicionarConta(contaBancaria10);
+        banco7.listarContas();
+        banco7.listarContas();
+        com.example.ContaBancaria contaBancaria16 = new com.example.ContaBancaria("", 10.0d);
+        banco7.adicionarConta(contaBancaria16);
+        com.example.ContaBancaria contaBancaria20 = new com.example.ContaBancaria("hi!", (double) '4');
+        contaBancaria20.depositar((double) (byte) -1);
+        banco7.adicionarConta(contaBancaria20);
+        com.example.ContaBancaria contaBancaria25 = banco7.buscarContaPorTitular("Titular: hi!, Saldo: R$ 52.0");
+        java.lang.String str26 = contaBancaria25.exibirDetalhes();
+        banco0.adicionarConta(contaBancaria25);
+        com.example.ContaBancaria contaBancaria29 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 52.0");
+        com.example.Banco banco30 = new com.example.Banco();
+        banco30.listarContas();
+        com.example.ContaBancaria contaBancaria33 = banco30.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
+        com.example.Banco banco34 = new com.example.Banco();
+        com.example.Banco banco35 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria38 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco35.adicionarConta(contaBancaria38);
+        banco34.adicionarConta(contaBancaria38);
+        com.example.ContaBancaria contaBancaria43 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco34.adicionarConta(contaBancaria43);
+        com.example.Banco banco45 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria48 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco45.adicionarConta(contaBancaria48);
+        banco45.listarContas();
+        banco45.listarContas();
+        com.example.ContaBancaria contaBancaria54 = new com.example.ContaBancaria("", 10.0d);
+        banco45.adicionarConta(contaBancaria54);
+        banco34.adicionarConta(contaBancaria54);
+        banco30.adicionarConta(contaBancaria54);
+        banco0.adicionarConta(contaBancaria54);
+        com.example.ContaBancaria contaBancaria61 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ -1.0", (double) 100.0f);
+        java.lang.String str62 = contaBancaria61.exibirDetalhes();
+        boolean boolean64 = contaBancaria61.sacar(152.0d);
+        banco0.adicionarConta(contaBancaria61);
+        com.example.ContaBancaria contaBancaria67 = banco0.buscarContaPorTitular("Titular: Titular: hi!, Saldo: R$ 107.0, Saldo: R$ 100.0");
+        banco0.listarContas();
+        com.example.ContaBancaria contaBancaria70 = banco0.buscarContaPorTitular("Titular: Titular: hi!, Saldo: R$ 9.0, Saldo: R$ 0.0");
+        org.junit.Assert.assertNotNull(contaBancaria25);
+        org.junit.Assert.assertEquals("'" + str26 + "' != '" + "Titular: hi!, Saldo: R$ 52.0" + "'", str26, "Titular: hi!, Saldo: R$ 52.0");
+        org.junit.Assert.assertNotNull(contaBancaria29);
+        org.junit.Assert.assertNull(contaBancaria33);
+        org.junit.Assert.assertEquals("'" + str62 + "' != '" + "Titular: Titular: hi!, Saldo: R$ -1.0, Saldo: R$ 100.0" + "'", str62, "Titular: Titular: hi!, Saldo: R$ -1.0, Saldo: R$ 100.0");
+        org.junit.Assert.assertTrue("'" + boolean64 + "' != '" + false + "'", boolean64 == false);
+        org.junit.Assert.assertNull(contaBancaria67);
+        org.junit.Assert.assertNull(contaBancaria70);
+    }
+
+    @Test
+    public void test1359() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1359");
+        com.example.Banco banco0 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco0.adicionarConta(contaBancaria3);
+        banco0.listarContas();
+        banco0.listarContas();
+        com.example.Banco banco7 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria10 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco7.adicionarConta(contaBancaria10);
+        banco7.listarContas();
+        banco7.listarContas();
+        com.example.ContaBancaria contaBancaria16 = new com.example.ContaBancaria("", 10.0d);
+        banco7.adicionarConta(contaBancaria16);
+        banco0.adicionarConta(contaBancaria16);
+        com.example.Banco banco19 = new com.example.Banco();
+        com.example.Banco banco20 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria23 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco20.adicionarConta(contaBancaria23);
+        banco19.adicionarConta(contaBancaria23);
+        com.example.ContaBancaria contaBancaria27 = banco19.buscarContaPorTitular("hi!");
+        boolean boolean29 = contaBancaria27.sacar((double) (-1.0f));
+        contaBancaria27.depositar((double) (-1.0f));
+        banco0.adicionarConta(contaBancaria27);
+        com.example.ContaBancaria contaBancaria34 = banco0.buscarContaPorTitular("Titular: Titular: hi!, Saldo: R$ -1.0, Saldo: R$ 100.0");
+        banco0.listarContas();
+        com.example.ContaBancaria contaBancaria38 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 52.0", (double) (byte) 100);
+        double double39 = contaBancaria38.consultarSaldo();
+        double double40 = contaBancaria38.consultarSaldo();
+        banco0.adicionarConta(contaBancaria38);
+        com.example.ContaBancaria contaBancaria43 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 17.0");
+        org.junit.Assert.assertNotNull(contaBancaria27);
+        org.junit.Assert.assertTrue("'" + boolean29 + "' != '" + false + "'", boolean29 == false);
+        org.junit.Assert.assertNull(contaBancaria34);
+        org.junit.Assert.assertTrue("'" + double39 + "' != '" + 100.0d + "'", double39 == 100.0d);
+        org.junit.Assert.assertTrue("'" + double40 + "' != '" + 100.0d + "'", double40 == 100.0d);
+        org.junit.Assert.assertNull(contaBancaria43);
+    }
+
+    @Test
+    public void test1360() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1360");
+        com.example.Banco banco0 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco0.adicionarConta(contaBancaria3);
+        banco0.listarContas();
+        com.example.ContaBancaria contaBancaria8 = new com.example.ContaBancaria("hi!", (double) (short) 100);
+        banco0.adicionarConta(contaBancaria8);
+        com.example.ContaBancaria contaBancaria12 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
+        boolean boolean14 = contaBancaria12.sacar((double) (-1L));
+        contaBancaria12.depositar((-1.0d));
+        banco0.adicionarConta(contaBancaria12);
+        com.example.ContaBancaria contaBancaria19 = banco0.buscarContaPorTitular("hi!");
+        double double20 = contaBancaria19.consultarSaldo();
+        double double21 = contaBancaria19.consultarSaldo();
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertNotNull(contaBancaria19);
+        org.junit.Assert.assertTrue("'" + double20 + "' != '" + 97.0d + "'", double20 == 97.0d);
+        org.junit.Assert.assertTrue("'" + double21 + "' != '" + 97.0d + "'", double21 == 97.0d);
+    }
+
+    @Test
+    public void test1361() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1361");
+        com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 9.0, Saldo: R$ 0.0", (double) 0L);
+    }
+
+    @Test
+    public void test1362() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1362");
+        com.example.Banco banco0 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco0.adicionarConta(contaBancaria3);
+        banco0.listarContas();
+        banco0.listarContas();
+        com.example.ContaBancaria contaBancaria9 = new com.example.ContaBancaria("", 10.0d);
+        banco0.adicionarConta(contaBancaria9);
+        com.example.ContaBancaria contaBancaria13 = new com.example.ContaBancaria("hi!", (double) '4');
+        contaBancaria13.depositar((double) (byte) -1);
+        banco0.adicionarConta(contaBancaria13);
+        com.example.ContaBancaria contaBancaria18 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 52.0");
+        com.example.ContaBancaria contaBancaria20 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 51.0");
+        com.example.ContaBancaria contaBancaria23 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 52.0", (double) 0.0f);
+        java.lang.String str24 = contaBancaria23.exibirDetalhes();
+        banco0.adicionarConta(contaBancaria23);
+        java.lang.String str26 = contaBancaria23.exibirDetalhes();
+        double double27 = contaBancaria23.consultarSaldo();
+        contaBancaria23.depositar(107.0d);
+        org.junit.Assert.assertNotNull(contaBancaria18);
+        org.junit.Assert.assertNull(contaBancaria20);
+        org.junit.Assert.assertEquals("'" + str24 + "' != '" + "Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0" + "'", str24, "Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0");
+        org.junit.Assert.assertEquals("'" + str26 + "' != '" + "Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0" + "'", str26, "Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0");
+        org.junit.Assert.assertTrue("'" + double27 + "' != '" + 0.0d + "'", double27 == 0.0d);
+    }
+
+    @Test
+    public void test1363() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1363");
+        com.example.Banco banco0 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco0.adicionarConta(contaBancaria3);
+        banco0.listarContas();
+        banco0.listarContas();
+        com.example.Banco banco7 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria10 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco7.adicionarConta(contaBancaria10);
+        banco7.listarContas();
+        banco7.listarContas();
+        com.example.ContaBancaria contaBancaria16 = new com.example.ContaBancaria("", 10.0d);
+        banco7.adicionarConta(contaBancaria16);
+        com.example.ContaBancaria contaBancaria20 = new com.example.ContaBancaria("hi!", (double) '4');
+        contaBancaria20.depositar((double) (byte) -1);
+        banco7.adicionarConta(contaBancaria20);
+        boolean boolean25 = contaBancaria20.sacar((double) (-1.0f));
+        java.lang.String str26 = contaBancaria20.exibirDetalhes();
+        contaBancaria20.depositar((double) (-1.0f));
+        banco0.adicionarConta(contaBancaria20);
+        banco0.listarContas();
+        com.example.Banco banco31 = new com.example.Banco();
+        banco31.listarContas();
+        com.example.ContaBancaria contaBancaria34 = banco31.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
+        com.example.ContaBancaria contaBancaria36 = banco31.buscarContaPorTitular("");
+        com.example.ContaBancaria contaBancaria38 = banco31.buscarContaPorTitular("Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 1.0");
+        com.example.ContaBancaria contaBancaria41 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 100.0", (double) 0L);
+        banco31.adicionarConta(contaBancaria41);
+        double double43 = contaBancaria41.consultarSaldo();
+        banco0.adicionarConta(contaBancaria41);
+        com.example.ContaBancaria contaBancaria47 = new com.example.ContaBancaria("Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 10.0", (double) (byte) 100);
+        banco0.adicionarConta(contaBancaria47);
+        com.example.ContaBancaria contaBancaria50 = banco0.buscarContaPorTitular("");
+        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + false + "'", boolean25 == false);
+        org.junit.Assert.assertEquals("'" + str26 + "' != '" + "Titular: hi!, Saldo: R$ 52.0" + "'", str26, "Titular: hi!, Saldo: R$ 52.0");
+        org.junit.Assert.assertNull(contaBancaria34);
+        org.junit.Assert.assertNull(contaBancaria36);
+        org.junit.Assert.assertNull(contaBancaria38);
+        org.junit.Assert.assertTrue("'" + double43 + "' != '" + 0.0d + "'", double43 == 0.0d);
+        org.junit.Assert.assertNotNull(contaBancaria50);
+    }
+
+    @Test
+    public void test1364() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1364");
+        com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 19.0", (double) 100.0f);
+    }
+
+    @Test
+    public void test1365() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1365");
+        com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 100.0", (double) 0);
+        double double3 = contaBancaria2.consultarSaldo();
+        java.lang.String str4 = contaBancaria2.exibirDetalhes();
+        contaBancaria2.depositar((double) 'a');
+        org.junit.Assert.assertTrue("'" + double3 + "' != '" + 0.0d + "'", double3 == 0.0d);
+        org.junit.Assert.assertEquals("'" + str4 + "' != '" + "Titular: Titular: hi!, Saldo: R$ 100.0, Saldo: R$ 0.0" + "'", str4, "Titular: Titular: hi!, Saldo: R$ 100.0, Saldo: R$ 0.0");
+    }
+
+    @Test
+    public void test1366() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1366");
+        com.example.Banco banco0 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco0.adicionarConta(contaBancaria3);
+        banco0.listarContas();
+        banco0.listarContas();
+        com.example.Banco banco7 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria10 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco7.adicionarConta(contaBancaria10);
+        banco7.listarContas();
+        banco7.listarContas();
+        com.example.ContaBancaria contaBancaria16 = new com.example.ContaBancaria("", 10.0d);
+        banco7.adicionarConta(contaBancaria16);
+        com.example.ContaBancaria contaBancaria20 = new com.example.ContaBancaria("hi!", (double) '4');
+        contaBancaria20.depositar((double) (byte) -1);
+        banco7.adicionarConta(contaBancaria20);
+        com.example.ContaBancaria contaBancaria25 = banco7.buscarContaPorTitular("Titular: hi!, Saldo: R$ 52.0");
+        java.lang.String str26 = contaBancaria25.exibirDetalhes();
+        banco0.adicionarConta(contaBancaria25);
+        com.example.ContaBancaria contaBancaria29 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 52.0");
+        com.example.Banco banco30 = new com.example.Banco();
+        banco30.listarContas();
+        com.example.ContaBancaria contaBancaria33 = banco30.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
+        com.example.Banco banco34 = new com.example.Banco();
+        com.example.Banco banco35 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria38 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco35.adicionarConta(contaBancaria38);
+        banco34.adicionarConta(contaBancaria38);
+        com.example.ContaBancaria contaBancaria43 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco34.adicionarConta(contaBancaria43);
+        com.example.Banco banco45 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria48 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco45.adicionarConta(contaBancaria48);
+        banco45.listarContas();
+        banco45.listarContas();
+        com.example.ContaBancaria contaBancaria54 = new com.example.ContaBancaria("", 10.0d);
+        banco45.adicionarConta(contaBancaria54);
+        banco34.adicionarConta(contaBancaria54);
+        banco30.adicionarConta(contaBancaria54);
+        banco0.adicionarConta(contaBancaria54);
+        com.example.ContaBancaria contaBancaria61 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ -1.0", (double) 100.0f);
+        java.lang.String str62 = contaBancaria61.exibirDetalhes();
+        boolean boolean64 = contaBancaria61.sacar(152.0d);
+        banco0.adicionarConta(contaBancaria61);
+        com.example.Banco banco66 = new com.example.Banco();
+        com.example.Banco banco67 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria70 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco67.adicionarConta(contaBancaria70);
+        banco66.adicionarConta(contaBancaria70);
+        com.example.ContaBancaria contaBancaria74 = banco66.buscarContaPorTitular("Titular: hi!, Saldo: R$ 97.0");
+        banco66.listarContas();
+        banco66.listarContas();
+        com.example.ContaBancaria contaBancaria79 = new com.example.ContaBancaria("hi!", (double) '4');
+        contaBancaria79.depositar((double) (byte) -1);
+        banco66.adicionarConta(contaBancaria79);
+        contaBancaria79.depositar((double) 1.0f);
+        banco0.adicionarConta(contaBancaria79);
+        double double86 = contaBancaria79.consultarSaldo();
+        org.junit.Assert.assertNotNull(contaBancaria25);
+        org.junit.Assert.assertEquals("'" + str26 + "' != '" + "Titular: hi!, Saldo: R$ 52.0" + "'", str26, "Titular: hi!, Saldo: R$ 52.0");
+        org.junit.Assert.assertNotNull(contaBancaria29);
+        org.junit.Assert.assertNull(contaBancaria33);
+        org.junit.Assert.assertEquals("'" + str62 + "' != '" + "Titular: Titular: hi!, Saldo: R$ -1.0, Saldo: R$ 100.0" + "'", str62, "Titular: Titular: hi!, Saldo: R$ -1.0, Saldo: R$ 100.0");
+        org.junit.Assert.assertTrue("'" + boolean64 + "' != '" + false + "'", boolean64 == false);
+        org.junit.Assert.assertNotNull(contaBancaria74);
+        org.junit.Assert.assertTrue("'" + double86 + "' != '" + 53.0d + "'", double86 == 53.0d);
+    }
+
+    @Test
+    public void test1367() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1367");
+        com.example.Banco banco0 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
+        boolean boolean5 = contaBancaria3.sacar((double) (-1L));
+        banco0.adicionarConta(contaBancaria3);
+        com.example.ContaBancaria contaBancaria9 = new com.example.ContaBancaria("hi!", (double) '4');
+        java.lang.String str10 = contaBancaria9.exibirDetalhes();
+        contaBancaria9.depositar(0.0d);
+        banco0.adicionarConta(contaBancaria9);
+        com.example.ContaBancaria contaBancaria15 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 52.0");
+        java.lang.String str16 = contaBancaria15.exibirDetalhes();
+        boolean boolean18 = contaBancaria15.sacar(11.0d);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Titular: hi!, Saldo: R$ 52.0" + "'", str10, "Titular: hi!, Saldo: R$ 52.0");
+        org.junit.Assert.assertNotNull(contaBancaria15);
+        org.junit.Assert.assertEquals("'" + str16 + "' != '" + "Titular: hi!, Saldo: R$ 52.0" + "'", str16, "Titular: hi!, Saldo: R$ 52.0");
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + true + "'", boolean18 == true);
+    }
+
+    @Test
+    public void test1368() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1368");
+        com.example.Banco banco0 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
+        boolean boolean5 = contaBancaria3.sacar((double) (-1L));
+        banco0.adicionarConta(contaBancaria3);
+        com.example.ContaBancaria contaBancaria8 = banco0.buscarContaPorTitular("");
+        banco0.listarContas();
+        com.example.ContaBancaria contaBancaria11 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 0.0");
+        com.example.Banco banco12 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria15 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco12.adicionarConta(contaBancaria15);
+        banco12.listarContas();
+        banco12.listarContas();
+        com.example.Banco banco19 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria22 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco19.adicionarConta(contaBancaria22);
+        banco19.listarContas();
+        banco19.listarContas();
+        com.example.ContaBancaria contaBancaria28 = new com.example.ContaBancaria("", 10.0d);
+        banco19.adicionarConta(contaBancaria28);
+        banco12.adicionarConta(contaBancaria28);
+        banco0.adicionarConta(contaBancaria28);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertNotNull(contaBancaria8);
+        org.junit.Assert.assertNull(contaBancaria11);
+    }
+
+    @Test
+    public void test1369() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1369");
+        com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("hi!", (double) (-1.0f));
+        boolean boolean4 = contaBancaria2.sacar((double) 100);
+        boolean boolean6 = contaBancaria2.sacar((double) 'a');
+        contaBancaria2.depositar((double) (short) 100);
+        boolean boolean10 = contaBancaria2.sacar((double) 'a');
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+    }
+
+    @Test
+    public void test1370() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1370");
+        com.example.ContaBancaria contaBancaria2 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 182.0", (double) 1.0f);
+        contaBancaria2.depositar(11.0d);
+    }
+
+    @Test
+    public void test1371() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1371");
+        com.example.Banco banco0 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco0.adicionarConta(contaBancaria3);
+        banco0.listarContas();
+        banco0.listarContas();
+        com.example.Banco banco7 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria10 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco7.adicionarConta(contaBancaria10);
+        banco7.listarContas();
+        banco7.listarContas();
+        com.example.ContaBancaria contaBancaria16 = new com.example.ContaBancaria("", 10.0d);
+        banco7.adicionarConta(contaBancaria16);
+        com.example.ContaBancaria contaBancaria20 = new com.example.ContaBancaria("hi!", (double) '4');
+        contaBancaria20.depositar((double) (byte) -1);
+        banco7.adicionarConta(contaBancaria20);
+        boolean boolean25 = contaBancaria20.sacar((double) (-1.0f));
+        java.lang.String str26 = contaBancaria20.exibirDetalhes();
+        contaBancaria20.depositar((double) (-1.0f));
+        banco0.adicionarConta(contaBancaria20);
+        com.example.Banco banco30 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria33 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco30.adicionarConta(contaBancaria33);
+        banco30.listarContas();
+        com.example.ContaBancaria contaBancaria38 = new com.example.ContaBancaria("hi!", (double) (short) 100);
+        banco30.adicionarConta(contaBancaria38);
+        banco30.listarContas();
+        com.example.ContaBancaria contaBancaria43 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
+        banco30.adicionarConta(contaBancaria43);
+        com.example.ContaBancaria contaBancaria46 = banco30.buscarContaPorTitular("Titular: Titular: hi!, Saldo: R$ 97.0, Saldo: R$ 100.0");
+        banco30.listarContas();
+        com.example.Banco banco48 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria51 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco48.adicionarConta(contaBancaria51);
+        banco48.listarContas();
+        banco48.listarContas();
+        com.example.ContaBancaria contaBancaria57 = new com.example.ContaBancaria("", 10.0d);
+        banco48.adicionarConta(contaBancaria57);
+        com.example.ContaBancaria contaBancaria61 = new com.example.ContaBancaria("hi!", (double) '4');
+        contaBancaria61.depositar((double) (byte) -1);
+        banco48.adicionarConta(contaBancaria61);
+        com.example.ContaBancaria contaBancaria66 = banco48.buscarContaPorTitular("Titular: hi!, Saldo: R$ 52.0");
+        com.example.ContaBancaria contaBancaria68 = banco48.buscarContaPorTitular("Titular: hi!, Saldo: R$ 51.0");
+        com.example.ContaBancaria contaBancaria71 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 52.0", (double) 0.0f);
+        java.lang.String str72 = contaBancaria71.exibirDetalhes();
+        banco48.adicionarConta(contaBancaria71);
+        com.example.ContaBancaria contaBancaria75 = banco48.buscarContaPorTitular("Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0");
+        boolean boolean77 = contaBancaria75.sacar((double) (short) 100);
+        java.lang.String str78 = contaBancaria75.exibirDetalhes();
+        double double79 = contaBancaria75.consultarSaldo();
+        banco30.adicionarConta(contaBancaria75);
+        banco0.adicionarConta(contaBancaria75);
+        double double82 = contaBancaria75.consultarSaldo();
+        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + false + "'", boolean25 == false);
+        org.junit.Assert.assertEquals("'" + str26 + "' != '" + "Titular: hi!, Saldo: R$ 52.0" + "'", str26, "Titular: hi!, Saldo: R$ 52.0");
+        org.junit.Assert.assertNull(contaBancaria46);
+        org.junit.Assert.assertNotNull(contaBancaria66);
+        org.junit.Assert.assertNull(contaBancaria68);
+        org.junit.Assert.assertEquals("'" + str72 + "' != '" + "Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0" + "'", str72, "Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0");
+        org.junit.Assert.assertNotNull(contaBancaria75);
+        org.junit.Assert.assertTrue("'" + boolean77 + "' != '" + false + "'", boolean77 == false);
+        org.junit.Assert.assertEquals("'" + str78 + "' != '" + "Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0" + "'", str78, "Titular: Titular: hi!, Saldo: R$ 52.0, Saldo: R$ 0.0");
+        org.junit.Assert.assertTrue("'" + double79 + "' != '" + 0.0d + "'", double79 == 0.0d);
+        org.junit.Assert.assertTrue("'" + double82 + "' != '" + 0.0d + "'", double82 == 0.0d);
+    }
+
+    @Test
+    public void test1372() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1372");
+        com.example.Banco banco0 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco0.adicionarConta(contaBancaria3);
+        banco0.listarContas();
+        banco0.listarContas();
+        com.example.ContaBancaria contaBancaria9 = new com.example.ContaBancaria("", 10.0d);
+        banco0.adicionarConta(contaBancaria9);
+        com.example.Banco banco11 = new com.example.Banco();
+        banco11.listarContas();
+        com.example.ContaBancaria contaBancaria14 = banco11.buscarContaPorTitular("Titular: hi!, Saldo: R$ 10.0");
+        com.example.Banco banco15 = new com.example.Banco();
+        com.example.Banco banco16 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria19 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco16.adicionarConta(contaBancaria19);
+        banco15.adicionarConta(contaBancaria19);
+        com.example.ContaBancaria contaBancaria24 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco15.adicionarConta(contaBancaria24);
+        com.example.Banco banco26 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria29 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco26.adicionarConta(contaBancaria29);
+        banco26.listarContas();
+        banco26.listarContas();
+        com.example.ContaBancaria contaBancaria35 = new com.example.ContaBancaria("", 10.0d);
+        banco26.adicionarConta(contaBancaria35);
+        banco15.adicionarConta(contaBancaria35);
+        banco11.adicionarConta(contaBancaria35);
+        com.example.ContaBancaria contaBancaria41 = new com.example.ContaBancaria("hi!", 0.0d);
+        banco11.adicionarConta(contaBancaria41);
+        contaBancaria41.depositar((double) (short) 100);
+        banco0.adicionarConta(contaBancaria41);
+        com.example.ContaBancaria contaBancaria47 = banco0.buscarContaPorTitular("Titular: Titular: hi!, Saldo: R$ 51.0, Saldo: R$ 100.0");
+        com.example.Banco banco48 = new com.example.Banco();
+        banco48.listarContas();
+        com.example.Banco banco50 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria53 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco50.adicionarConta(contaBancaria53);
+        banco50.listarContas();
+        com.example.ContaBancaria contaBancaria58 = new com.example.ContaBancaria("hi!", (double) (short) 100);
+        banco50.adicionarConta(contaBancaria58);
+        com.example.ContaBancaria contaBancaria62 = new com.example.ContaBancaria("hi!", (double) (byte) 10);
+        boolean boolean64 = contaBancaria62.sacar((double) (-1L));
+        contaBancaria62.depositar((-1.0d));
+        banco50.adicionarConta(contaBancaria62);
+        banco48.adicionarConta(contaBancaria62);
+        double double69 = contaBancaria62.consultarSaldo();
+        banco0.adicionarConta(contaBancaria62);
+        contaBancaria62.depositar(104.0d);
+        org.junit.Assert.assertNull(contaBancaria14);
+        org.junit.Assert.assertNull(contaBancaria47);
+        org.junit.Assert.assertTrue("'" + boolean64 + "' != '" + false + "'", boolean64 == false);
+        org.junit.Assert.assertTrue("'" + double69 + "' != '" + 10.0d + "'", double69 == 10.0d);
+    }
+
+    @Test
+    public void test1373() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest2.test1373");
+        com.example.Banco banco0 = new com.example.Banco();
+        com.example.ContaBancaria contaBancaria3 = new com.example.ContaBancaria("hi!", (double) 'a');
+        banco0.adicionarConta(contaBancaria3);
+        banco0.listarContas();
+        banco0.listarContas();
+        com.example.ContaBancaria contaBancaria9 = new com.example.ContaBancaria("", 10.0d);
+        banco0.adicionarConta(contaBancaria9);
+        com.example.ContaBancaria contaBancaria13 = new com.example.ContaBancaria("hi!", (double) '4');
+        contaBancaria13.depositar((double) (byte) -1);
+        banco0.adicionarConta(contaBancaria13);
+        com.example.ContaBancaria contaBancaria18 = banco0.buscarContaPorTitular("Titular: hi!, Saldo: R$ 52.0");
+        com.example.ContaBancaria contaBancaria21 = new com.example.ContaBancaria("Titular: hi!, Saldo: R$ 97.0", (double) (short) 100);
+        banco0.adicionarConta(contaBancaria21);
+        banco0.listarContas();
+        banco0.listarContas();
+        banco0.listarContas();
+        org.junit.Assert.assertNotNull(contaBancaria18);
     }
 }
 
